@@ -1,0 +1,51 @@
+---
+import Slides from '@layouts/Slides.astro'
+---
+
+<Slides title="Test">
+  <section>
+    <h2 class="r-fit-text">Test Presentation</h2>
+    <h2 class="r-fit-text">Using Hyper-Text Markup Language</h2>
+  </section>
+
+  <section>
+    <section>
+      This is an example of <span class="fragment fade-up">vertical</span> slides
+      <aside class="notes">Press up or down to navigate vertical slides</aside>
+    </section>
+
+    <section data-background-color="rgb(47, 91, 58)">
+      <p>Did you know?</p>
+      <p class="fragment">You can reveal items using the <code class="fragment highlight-green">fragment</code> class</p>
+    </section>
+  </section>
+
+  <section>
+    <section>
+      Below is an example of <span class="fragment highlight-green">syntax highlighting</span>
+    </section>
+
+    <section>
+      <pre>
+        <code data-trim data-noescape data-line-numbers="2-4|5-7">
+          &lt;section&gt;
+            &lt;section&gt;
+              &lt;h2&gt;Slide 1&lt;/h2&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+              &lt;h2&gt;Slide 2&lt;/h2&gt;
+            &lt;/section&gt;
+          &lt;/section&gt;
+        </code>
+      </pre>
+      <aside class="notes">
+        Vertical slides are indicated by nested <code>&lt;section&gt;</code> elements
+      </aside>
+    </section>
+  </section>
+
+  <section>
+    <h2 class="r-fit-text">That's all, folks 🎉</h2>
+    <a class="r-fit-text" href="#/0">click to return to start of presentation</a>
+  </section>
+</Slides>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  title?: string;
+}
+import Base from '@layouts/Base.astro'
+const { title } = Astro.props
+const year = new Date().getFullYear()
+---
+
+<Base title={ title }>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </Fragment>
+  <slot name="header">
+    <header>
+      <h1>Rylan Schubkegel</h1>
+      <div>Hill Creek Christian Class Resources</div>
+    </header>
+  </slot>
+  <slot />
+  <slot name="footer">
+    <footer>
+      <p>&copy; Rylan Schubkegel { year }</p>
+      <p>Made with <a href="https://astro.build/">Astro</a>, <a href="https://simplecss.org/">Simple.css</a>, and <a href="https://revealjs.com/">reveal.js</a></p>
+    </footer>
+  </slot>
+</Base>
