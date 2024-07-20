@@ -2,11 +2,15 @@
 import Simple from '@layouts/Simple.astro'
 ---
 
-<Simple title="2024 Fall -Comp. Sci. | HCC">
+<Simple title="2024 Fall - Comp. Sci. | HCC">
   <Fragment slot="header">
     <header>
       <h1>Computer Science</h1>
-      <div>HCC 2024 Fall Academic Semester</div>
+      <div>
+        <a href="https://hillcreekchristian.org/" target="_blank">Hill Creek Christian</a>
+        -
+        2024 Fall Academic Semester
+      </div>
       <nav>
         <a href="/">Home</a>
       </nav>
@@ -16,7 +20,101 @@ import Simple from '@layouts/Simple.astro'
     <p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
     <p><cite>Phil Karlton</cite></p>
   </blockquote>
-  <ul>
-    <li><a href="/2024/cs/slides/test">Test slide deck</a></li>
-  </ul>
+  <h2>Course Resources</h2>
+  <p>These resources will be used throughout the entirity of the course.</p>
+  <h3>
+    <a href="">Course Syllabus</a>
+  </h3>
+  <p>Includes an overview of the topics covered, grading criteria, and participation expectations.</p>
+  <h3>
+    <a href="https://onecompiler.com/studio">OneCompiler Studio</a>
+  </h3>
+  <p>Online <abbr title="integrated development environment">IDE</abbr> used for coding; can be accessed from any computer via Google account or username/password.</p>
+  <h2>Weekly Resources</h2>
+  <details>
+    <summary>Legend</summary>
+    <ul>
+      <li>
+        <code>🎞️</code> Slide Deck
+      </li>
+      <li>
+        <code>📽️</code> Video
+      </li>
+      <li>
+        <code>📖</code> Article
+      </li>
+      <li>
+        <code>📝</code> Assignment
+      </li>
+    </ul>
+  </details>
+  <table>
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Topic(s)</th>
+        <th>Resources</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sep. 12&mdash;18</td>
+        <td>
+          <ul>Course Introduction</ul>
+          <ul>What is a Computer</ul>
+        </td>
+        <td>
+          <ul>
+            <li>
+              🎞️ <a href="/2024/cs/slides/hello-world" target="_blank">Hello, World</a>
+            </li>
+            <li>
+              📖 <a href="" target="_blank">Syllabus</a>
+            </li>
+            <li>
+              📽️ <a href="https://youtu.be/mCq8-xTH7jA?si=Xd8vFaW51kNiU0af" target="_blank">What Makes a Computer, a Computer?</a>
+            </li>
+            <li>
+              📽️ <a href="https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd" target="_blank">Binary &amp; Data</a>
+            </li>
+            <li>
+              📽️ <a href="https://youtu.be/ZoqMiFKspAA?si=daBAe7nFXQRLSQmT" target="_blank">Circuits &amp; Logic</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <abbr title="to be determined">TBD</abbr>
+        </td>
+        <td>
+          <ul>
+            <li>The Internet</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>
+              📽️ <a href="https://youtu.be/Dxcc6ycZ73M?si=xAxFcJWZr-kCH13Y" target="_blank">What is the Internet?</a>
+            </li>
+            <li>
+              📽️ <a href="https://youtu.be/ZhEf7e4kopM?si=cSM97bwhZdxZswK_" target="_blank">Wires, Cables &amp; Wifi</a>
+            </li>
+            <li>
+              📽️ <a href="https://youtu.be/AuYNXgO_f3Y?si=ZHW4Fzvwf9rJKo0p" target="_blank">Cybersecurity &amp; Crime</a>
+            </li>
+            <li>
+              📽️ <a href="https://youtu.be/LVV_93mBfSU?si=tz6NMFcOnhQlUovi" target="_blank">Cybersecurity &amp; Crime</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <style>
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+  </style>
 </Simple>
