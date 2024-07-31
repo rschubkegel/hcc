@@ -13,18 +13,14 @@ const year = new Date().getFullYear()
   </Fragment>
   <slot name="header">
     <header>
-      <h1>Mr. Schubkegel</h1>
-      <div>
-        <a href="https://hillcreekchristian.org/" target="_blank">Hill Creek Christian</a>
-        -
-        Class Resources
-      </div>
+      <h1>Class Resources</h1>
+      <p><em>for <a href="https://hillcreekchristian.org/" target="_blank">HCC</a> classes taught by Mr. Schubkegel</em></p>
     </header>
   </slot>
   <slot />
   <slot name="footer">
     <footer>
-      <p>&copy; Rylan Schubkegel { year }</p>
+      <p>&copy; <a href="https://rschubkegel.com/">Rylan Schubkegel</a> { year }</p>
       <p>Made with <a href="https://astro.build/">Astro</a>, <a href="https://simplecss.org/">Simple.css</a>, and <a href="https://revealjs.com/">reveal.js</a></p>
     </footer>
   </slot>

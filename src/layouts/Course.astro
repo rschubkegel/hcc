@@ -1,0 +1,26 @@
+---
+import Simple from '@layouts/Simple.astro'
+const [, year, semesterSlug, courseSlug] = Astro.url.pathname.split('/')
+const unslugify = (str: string) => str.split('-').map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(' ')
+const semester = unslugify(semesterSlug)
+const course = unslugify(courseSlug)
+---
+
+<Simple title={`${semester} ${year} | ${course}`}>
+  <Fragment slot="header">
+    <header>
+      <h1>{ course }</h1>
+      <div>
+        { semester } { year }
+        |
+        <a href="/">Mr. Schubkegel</a>
+        |
+        <a href="https://hillcreekchristian.org/" target="_blank">HCC</a>
+      </div>
+      <nav hidden>
+        <a href={`/${year}/${semesterSlug}/${courseSlug}`}>Home</a>
+      </nav>
+    </header>
+  </Fragment>
+  <slot />
+</Simple>

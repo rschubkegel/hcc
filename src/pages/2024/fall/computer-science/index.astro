@@ -1,39 +1,47 @@
 ---
-import Simple from '@layouts/Simple.astro'
+import Course from '@layouts/Course.astro'
 ---
 
-<Simple title="2024 Fall - Comp. Sci. | HCC">
-  <Fragment slot="header">
-    <header>
-      <h1>Computer Science</h1>
-      <div>
-        <a href="https://hillcreekchristian.org/" target="_blank">Hill Creek Christian</a>
-        -
-        2024 Fall Academic Semester
-      </div>
-      <nav>
-        <a href="/">Home</a>
-      </nav>
-    </header>
-  </Fragment>
+<Course course="Computer Science" semester="Fall">
   <blockquote>
     <p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
     <p><cite>Phil Karlton</cite></p>
   </blockquote>
   <h2>Course Resources</h2>
   <p>These resources will be used throughout the entirity of the course.</p>
-  <h3>
-    <a href="">Course Syllabus</a>
-  </h3>
-  <p>Includes an overview of the topics covered, grading criteria, and participation expectations.</p>
-  <h3>
-    <a href="https://onecompiler.com/studio">OneCompiler Studio</a>
-  </h3>
-  <p>Online <abbr title="integrated development environment">IDE</abbr> used for coding; can be accessed from any computer via Google account or username/password.</p>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <a href="/2024/fall/computer-science/syllabus">Course Syllabus</a>
+        </td>
+        <td>
+          Includes an overview of the topics covered, grading criteria, and participation expectations.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://onecompiler.com/studio">OneCompiler Studio</a>
+        </td>
+        <td>
+          Online <abbr title="integrated development environment">IDE</abbr> used for coding; can be accessed from any computer via Google account or username/password.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="mailto:rylanschubkegel@gmail.com">rylanschubkegel@gmail.com</a>
+          <br><a href="tel:+13608401401">3600-840-1401</a>
+        </td>
+        <td>
+          Instructor contact information.
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <h2>Weekly Resources</h2>
   <details>
     <summary>Legend</summary>
-    <ul>
+    <ul class="emoji">
       <li>
         <code>🎞️</code> Slide Deck
       </li>
@@ -58,21 +66,23 @@ import Simple from '@layouts/Simple.astro'
     </thead>
     <tbody>
       <tr>
-        <td>Sep. 12&mdash;18</td>
-        <td>
-          <ul>Course Introduction</ul>
-          <ul>What is a Computer</ul>
-        </td>
+        <td>Sep. 12&ndash;18</td>
         <td>
           <ul>
+            <li>Course Introduction</li>
+            <li>What is a Computer</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="emoji">
             <li>
-              🎞️ <a href="/2024/cs/slides/hello-world" target="_blank">Hello, World</a>
+              🎞️ <a href="/2024/fall/computer-science/slides/hello-world" target="_blank">Hello, World</a>
             </li>
             <li>
-              📖 <a href="" target="_blank">Syllabus</a>
+              📖 <a href="/2024/fall/computer-science/syllabus">Syllabus</a>
             </li>
             <li>
-              📽️ <a href="https://youtu.be/mCq8-xTH7jA?si=Xd8vFaW51kNiU0af" target="_blank">What Makes a Computer, a Computer?</a>
+              📽️ <a href="https://youtu.be/mCq8-xTH7jA?si=Xd8vFaW51kNiU0af" target="_blank">What Makes a Computer...</a>
             </li>
             <li>
               📽️ <a href="https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd" target="_blank">Binary &amp; Data</a>
@@ -84,16 +94,14 @@ import Simple from '@layouts/Simple.astro'
         </td>
       </tr>
       <tr>
-        <td>
-          <abbr title="to be determined">TBD</abbr>
-        </td>
+        <td>Sep. 19&ndash;25</td>
         <td>
           <ul>
             <li>The Internet</li>
           </ul>
         </td>
         <td>
-          <ul>
+          <ul class="emoji">
             <li>
               📽️ <a href="https://youtu.be/Dxcc6ycZ73M?si=xAxFcJWZr-kCH13Y" target="_blank">What is the Internet?</a>
             </li>
@@ -104,17 +112,11 @@ import Simple from '@layouts/Simple.astro'
               📽️ <a href="https://youtu.be/AuYNXgO_f3Y?si=ZHW4Fzvwf9rJKo0p" target="_blank">Cybersecurity &amp; Crime</a>
             </li>
             <li>
-              📽️ <a href="https://youtu.be/LVV_93mBfSU?si=tz6NMFcOnhQlUovi" target="_blank">Cybersecurity &amp; Crime</a>
+              📽️ <a href="https://youtu.be/LVV_93mBfSU?si=tz6NMFcOnhQlUovi" target="_blank">How Search Works</a>
             </li>
           </ul>
         </td>
       </tr>
     </tbody>
   </table>
-  <style>
-    ul {
-      list-style: none;
-      padding-left: 1rem;
-    }
-  </style>
-</Simple>
+</Course>

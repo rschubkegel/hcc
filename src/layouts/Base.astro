@@ -16,5 +16,24 @@ const { title } = Astro.props
   </head>
   <body>
     <slot />
+    <style is:global>
+      ul {
+        padding-left: 1.25rem;
+      }
+      ul.emoji {
+        list-style: none;
+        padding-left: .5rem;
+      }
+      @media (max-width: 450px) {
+        html {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 380px) {
+        html {
+          font-size: 13px;
+        }
+      }
+    </style>
   </body>
 </html>
