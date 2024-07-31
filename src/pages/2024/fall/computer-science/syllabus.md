@@ -6,6 +6,10 @@ layout: "@layouts/Course.astro"
 
 # Syllabus
 
+- **Grades**: 9-12
+- **Class Time**: 8:00am-9:55am
+- **Classroom**: Student Center / Chapel
+
 Please note: <mark>this syllabus may be updated</mark> based on the needs of the class and at the discretion of the instructor (the same is true for other course materials).
 
 - [Course Description](#course-description)
@@ -13,10 +17,12 @@ Please note: <mark>this syllabus may be updated</mark> based on the needs of the
 - [Course Structure](#course-structure)
 - [Required Materials](#required-materials)
 - [Grading Policy](#grading-policy)
-  - [Participation](#participation)
-  - [Projects](#projects)
-  - [Tests](#tests)
-  - [Exams](#exams)
+  - [Letter Grades](#letter-grades)
+  - [Grading Rubric](#grading-rubric)
+    - [Participation](#participation)
+    - [Projects](#projects)
+    - [Tests](#tests)
+    - [Exams](#exams)
 - [Classroom Expectations](#classroom-expectations)
 
 ## Course Description
@@ -51,7 +57,7 @@ Students will build projects throughout the semester to apply their knowledge. T
 
 In-person lectures will only occur *once every two weeks*, with online check-ins required during off-weeks. Check-ins will mimic agile scrum meetings used in professional software development.
 
-Students are encouraged to *take ownership of their own experience in this class*. In addition to completing assignments, students should proactively reach out for help when necessary and inquire about ways to expand projects beyond the minimum requirements (see [grading criterea](#grading-policy)). While this is an accredited course, *students will get out of the class what they put in*.
+Students are encouraged to *take ownership of their own experience in this class*. In addition to completing assignments, students should proactively reach out for help when necessary and inquire about ways to expand projects beyond the minimum requirements. While this is an accredited course, *students will get out of the class what they put in*.
 
 ## Required Materials
 
@@ -63,6 +69,29 @@ No textbooks are required; free digital course materials will be provided throug
 
 ## Grading Policy
 
+### Letter Grades
+
+Letter grades will be awarded according to the following scale:
+
+| Letter | Grade |
+| -- | -- |
+| A  | 93%-100% |
+| A- | 90%-92% |
+| B+ | 88%-89% |
+| B  | 83%-87% |
+| B- | 80%-82% |
+| C+ | 78%-79% |
+| C  | 73%-77% |
+| C- | 70%-72% |
+| D+ | 68%-69% |
+| D  | 63%-67% |
+| D- | 60%-62% |
+| F  | < 60% |
+
+### Grading Rubric
+
+Student work will be evaluated on the following criteria:
+
 | Category | Percentage |
 | -- | -- |
 | [Participation](#participation) | 20% |
@@ -70,7 +99,7 @@ No textbooks are required; free digital course materials will be provided throug
 | [Tests](#tests) | 30% |
 | [Exams](#exams) | 20% |
 
-### Participation
+#### Participation
 
 Student participation will be evaluated on the following criteria:
 
@@ -84,7 +113,7 @@ Student participation will be evaluated on the following criteria:
 <!-- interaction = respect + attention + involvement -->
 <!-- communication = asking for help + progress reports -->
 
-### Projects
+#### Projects
 
 Student projects will be evaluated on the following criteria:
 
@@ -96,20 +125,20 @@ Student projects will be evaluated on the following criteria:
 
 Late projects will be penalized by subtracting 10% of the graded points for each day that has elapsed since the deadline. For example:
 
-```
+<pre>
   60% (passes required functionality)
 + 35% (formatted well but solution is not idiomatic)
 = 95% (base score)
 
  -20% (2 days late)
 = 76% (final score)
-```
+</pre>
 
-### Tests
+#### Tests
 
 There will be online tests every other week that evaluate non-cumulative knowledge retention.
 
-### Exams
+#### Exams
 
 There will be two in-person exams: one midterm and one final. Exams will evaluate cumulative knowledge retention.
 
@@ -121,4 +150,4 @@ Students are expected to exemplify the following characteristics:
 - Attention
 - Involvement
 
-Similarly, I will do my best to be respectful, engaged, and encouraging.
+Similarly, I will do my best to be respectful, attentive, and encouraging.
