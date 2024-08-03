@@ -21,7 +21,7 @@ Please note: <mark>this syllabus may be updated</mark> based on the needs of the
   - [Grading Rubric](#grading-rubric)
     - [Participation](#participation)
     - [Projects](#projects)
-    - [Tests](#tests)
+    - [Quizes](#quizes)
     - [Exams](#exams)
 - [Classroom Expectations](#classroom-expectations)
 
@@ -61,7 +61,7 @@ Students are encouraged to *take ownership of their own experience in this class
 
 ## Required Materials
 
-Students will need access to a computer with internet access in order to access course materials, complete online tests, and work on programming assignments.
+Students will need access to a computer with internet access in order to access course materials, complete online quizes, and work on programming assignments.
 
 Students (or their parent) are required to sign up for a free account for the online development environment [OneCompiler](https://onecompiler.com/).
 
@@ -96,7 +96,7 @@ Student work will be evaluated on the following criteria:
 | -- | -- |
 | [Participation](#participation) | 20% |
 | [Projects](#projects) | 30% |
-| [Tests](#tests) | 30% |
+| [Quizes](#quizes) | 30% |
 | [Exams](#exams) | 20% |
 
 #### Participation
@@ -134,9 +134,9 @@ Late projects will be penalized by subtracting 10% of the graded points for each
 = 76% (final score)
 </pre>
 
-#### Tests
+#### Quizes
 
-There will be online tests every other week that evaluate non-cumulative knowledge retention.
+There will be online quizes every week that evaluate non-cumulative knowledge retention.
 
 #### Exams
 
