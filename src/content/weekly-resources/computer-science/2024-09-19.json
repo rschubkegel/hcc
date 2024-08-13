@@ -1,0 +1,9 @@
+{
+  "topics": ["Operating Systems", "Coding Languages", "IDEs"],
+  "resources": [
+    {
+      "title": "Hello, world!",
+      "type": "assignment"
+    }
+  ]
+}

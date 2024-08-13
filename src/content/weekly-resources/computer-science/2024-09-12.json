@@ -1,0 +1,35 @@
+{
+  "topics": ["Course Introduction", "What is a Computer"],
+  "resources": [
+    {
+      "title": "Hello, World",
+      "href": "/2024/fall/computer-science/slides/hello-world",
+      "type": "slides"
+    },
+    {
+      "title": "Syllabus",
+      "href": "/2024/fall/computer-science/syllabus",
+      "type": "article"
+    },
+    {
+      "title": "What Makes a Computer...",
+      "href": "https://youtu.be/mCq8-xTH7jA?si=Xd8vFaW51kNiU0af",
+      "type": "video"
+    },
+    {
+      "title": "Binary & Data",
+      "href": "https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd",
+      "type": "video"
+    },
+    {
+      "title": "Circuits & Logic",
+      "href": "https://youtu.be/ZoqMiFKspAA?si=daBAe7nFXQRLSQmT",
+      "type": "video"
+    },
+    {
+      "title": "Set up OneCompiler Studio",
+      "href": "https://onecompiler.com/studio",
+      "type": "assignment"
+    }
+  ]
+}

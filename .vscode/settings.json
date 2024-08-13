@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/src/content/resources/**"
+      ],
+      "url": "./.astro/collections/resources.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/src/content/weekly-resources/**"
+      ],
+      "url": "./.astro/collections/weekly-resources.schema.json"
+    }
+  ]
+}

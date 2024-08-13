@@ -1,5 +1,17 @@
 ---
-import Course from '@layouts/Course.astro'
+import Course from '@layouts/Course.astro';
+import { getCollection } from 'astro:content';
+import { capitalizeString, formatWeekString, SYMBOLS } from 'src/global';
+const currentDate = new Date();
+const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
+  if (!id.startsWith('computer-science')) return false;
+  if (import.meta.env.DEV) return true;
+  const date = new Date(id.slice(-10));
+  if (date.getFullYear() > currentDate.getFullYear()) return false;
+  if (date.getMonth() > currentDate.getMonth()) return false;
+  if (date.getDate() > currentDate.getDate()) return false;
+  return true;
+});
 ---
 
 <Course course="Computer Science" semester="Fall">
@@ -42,22 +54,13 @@ import Course from '@layouts/Course.astro'
   <details>
     <summary>Legend</summary>
     <ul class="emoji">
-      <li>
-        <code>🎞️</code> Slide Deck
-      </li>
-      <li>
-        <code>📽️</code> Video
-      </li>
-      <li>
-        <code>📖</code> Article
-      </li>
-      <li>
-        <code>📝</code> Assignment
-      </li>
+      {
+        Object.entries(SYMBOLS).map(([title, emoji]) => (
+          <li>{emoji} {capitalizeString(title)}</li>
+        ))
+      }
     </ul>
   </details>
-  <!-- TODO: migrate to content collection -->
-  <!-- https://docs.astro.build/en/guides/content-collections/ -->
   <table>
     <thead>
       <tr>
@@ -67,105 +70,33 @@ import Course from '@layouts/Course.astro'
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Sep. 12&ndash;18</td>
-        <td>
-          <ul>
-            <li>Course Introduction</li>
-            <li>What is a Computer</li>
-          </ul>
-        </td>
-        <td>
-          <ul class="emoji">
-            <li>
-              🎞️ <a href="/2024/fall/computer-science/slides/hello-world" target="_blank">Hello, World</a>
-            </li>
-            <li>
-              📖 <a href="/2024/fall/computer-science/syllabus">Syllabus</a>
-            </li>
-            <li>
-              📽️ <a href="https://youtu.be/mCq8-xTH7jA?si=Xd8vFaW51kNiU0af" target="_blank">What Makes a Computer...</a>
-            </li>
-            <li>
-              📽️ <a href="https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd" target="_blank">Binary &amp; Data</a>
-            </li>
-            <li>
-              📽️ <a href="https://youtu.be/ZoqMiFKspAA?si=daBAe7nFXQRLSQmT" target="_blank">Circuits &amp; Logic</a>
-            </li>
-            <li>
-              📝 Set up <a href="https://onecompiler.com/studio" target="_blank">OneCompiler Studio</a>
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Sep. 19&ndash;25</td>
-        <td>
-          <ul>
-            <li>Operating Systems</li>
-            <li>Coding Languages</li>
-            <li><abbr title="integrated development environment">IDE</abbr>s</li>
-          </ul>
-        </td>
-        <td>
-          <ul class="emoji">
-            <!-- TODO -->
-            <li>
-              📝 Project: Hello, world!
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Sep. 26&ndash;Oct. 02</td>
-        <td>
-          <ul>
-            <li>The Internet</li>
-          </ul>
-        </td>
-        <td>
-          <ul class="emoji">
-            <!-- TODO -->
-            <li>
-              📽️ <a href="https://youtu.be/Dxcc6ycZ73M?si=xAxFcJWZr-kCH13Y" target="_blank">What is the Internet?</a>
-            </li>
-            <li>
-              📽️ <a href="https://youtu.be/ZhEf7e4kopM?si=cSM97bwhZdxZswK_" target="_blank">Wires, Cables &amp; Wifi</a>
-            </li>
-            <li>
-              📽️ <a href="https://youtu.be/AuYNXgO_f3Y?si=ZHW4Fzvwf9rJKo0p" target="_blank">Cybersecurity &amp; Crime</a>
-            </li>
-            <li>
-              📽️ <a href="https://youtu.be/LVV_93mBfSU?si=tz6NMFcOnhQlUovi" target="_blank">How Search Works</a>
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <tr hidden>
-        <td>DATE</td>
-        <td>
-          <ul>
-            <li>TOPIC 1</li>
-            <li>TOPIC 2</li>
-          </ul>
-        </td>
-        <td>
-          <ul class="emoji">
-            <li>
-              🎞️ Slide Deck
-            </li>
-            <li>
-              📽️ Video
-            </li>
-            <li>
-              📖 Article
-            </li>
-            <li>
-              📝 Assignment
-            </li>
-          </ul>
-        </td>
-      </tr>
+      {
+        weeklyResources.map(({ id, data }) => (
+          <tr>
+            <td>{formatWeekString(id.slice(-10))}</td>
+            <td>
+              <ul>
+                {
+                  data.topics.map(topic => (
+                    <li>{topic}</li>
+                  ))
+                }
+              </ul>
+            </td>
+            <td>
+              <ul class="emoji">
+                {
+                  data.resources.map(resource => (
+                    <li>
+                      {SYMBOLS[resource.type]} <a href={resource.href} target="_blank">{resource.title}</a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </td>
+          </tr>
+        ))
+      }
     </tbody>
   </table>
 </Course>

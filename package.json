@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "astro": "^4.11.0",
+    "astro": "^4.13.0",
     "reveal.js": "^5.1.0",
     "typescript": "^5.5.2"
   },
