@@ -1,0 +1,10 @@
+{
+  "topics": ["Getting to Know You"],
+  "resources": [
+    {
+      "title": "Intro Survey",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLScX5KrvQtD4aQY0nJDPdR5LckyL-e1RgxnQjCMPK-azTYE9yA/viewform?usp=sf_link",
+      "type": "assignment"
+    }
+  ]
+}
