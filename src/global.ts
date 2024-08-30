@@ -21,3 +21,9 @@ export const formatWeekString = (isoString: string) => {
     : end.toLocaleString('en-US', { day: '2-digit' });
   return `${startString}–${endString}`;
 };
+
+/** Unslugifies a string */
+export const unslugify = (str: string) => str.split('-').map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(' ');
+
+/** Checks if a string is an external link */
+export const isHrefExternal = (href: string) => /^https?:\/\//.test(href);

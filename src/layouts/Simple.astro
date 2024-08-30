@@ -1,13 +1,17 @@
 ---
 interface Props {
   title?: string;
+  frontmatter?: {
+    title?: string;
+  };
 }
 import Base from '@layouts/Base.astro'
-const { title } = Astro.props
+const { title, frontmatter } = Astro.props
+const frontmatterTitle = frontmatter?.title
 const year = new Date().getFullYear()
 ---
 
-<Base title={ title }>
+<Base title={ title ?? frontmatterTitle }>
   <Fragment slot="head">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   </Fragment>

@@ -1,7 +1,7 @@
 ---
 import Course from '@layouts/Course.astro';
 import { getCollection } from 'astro:content';
-import { capitalizeString, formatWeekString, SYMBOLS } from 'src/global';
+import { capitalizeString, formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 const currentDate = new Date();
 const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
   if (!id.startsWith('computer-science')) return false;
@@ -88,7 +88,7 @@ const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
                 {
                   data.resources.map(resource => (
                     <li>
-                      {SYMBOLS[resource.type]} <a href={resource.href} target="_blank">{resource.title}</a>
+                      {SYMBOLS[resource.type]} <a href={resource.href} target={(resource.type === 'assignment' && resource.href && !isHrefExternal(resource.href)) ? '' : '_blank'}>{resource.title}</a>
                     </li>
                   ))
                 }

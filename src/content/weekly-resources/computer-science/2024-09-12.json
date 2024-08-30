@@ -2,7 +2,7 @@
   "topics": ["Course Introduction", "What is a Computer"],
   "resources": [
     {
-      "title": "Hello, World",
+      "title": "Hello, World!",
       "href": "/2024/fall/computer-science/slides/hello-world",
       "type": "slides"
     },
@@ -27,9 +27,9 @@
       "type": "video"
     },
     {
-      "title": "Set up OneCompiler Studio",
-      "href": "https://onecompiler.com/studio",
-      "type": "assignment"
+      "title": "Hello, World!",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/hello-world"
     },
     {
       "title": "Week 1 Quiz",
