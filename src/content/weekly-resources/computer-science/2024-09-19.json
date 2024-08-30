@@ -2,12 +2,28 @@
   "topics": ["Operating Systems", "Coding Languages", "IDEs"],
   "resources": [
     {
+      "title": "Crash Course: Operating Systems",
+      "type": "video",
+      "href": "https://youtu.be/26QPDBe-NB8?si=p6KmuaqJM5xXJCRm"
+    },
+    {
+      "title": "Brief History of Windows",
+      "type": "article",
+      "href": "https://medium.com/@Kevin_Finnerty_Gabagool/from-dos-to-windows-the-evolutionary-journey-of-microsofts-operating-systems-92571ffdf951"
+    },
+    {
+      "title": "Brief History of MacOS",
+      "type": "article",
+      "href": "https://www.historytools.org/software/complete-history-of-mac-os"
+    },
+    {
       "title": "Hello, world!",
       "type": "assignment"
     },
     {
       "title": "Week 2 Quiz",
-      "type": "assignment"
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeCluxDwXEppbINHm76RpJeIzUMhS1pF1DQVNyRZ8_NnVqt6A/viewform?usp=sf_link"
     }
   ]
 }
