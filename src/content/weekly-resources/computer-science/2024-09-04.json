@@ -1,0 +1,20 @@
+{
+  "topics": ["Getting Started"],
+  "resources": [
+    {
+      "title": "Syllabus Review",
+      "href": "/2024/fall/computer-science/syllabus",
+      "type": "article"
+    },
+    {
+      "title": "ThinkWave Check-in",
+      "href": "/2024/fall/computer-science/assignments/thinkwave-check-in",
+      "type": "assignment"
+    },
+    {
+      "title": "Intro Survey",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLScX5KrvQtD4aQY0nJDPdR5LckyL-e1RgxnQjCMPK-azTYE9yA/viewform?usp=sf_link",
+      "type": "assignment"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ title: "Assignment: Hello, World!"
 
 ← [Course Homepage](/2024/fall/computer-science)
 
-# Assignment: Hello, World!
+# Hello, World!
 
 <mark>Due 09/17 at 11:59</mark>
 
