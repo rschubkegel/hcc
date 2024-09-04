@@ -1,7 +1,7 @@
 ---
 import Course from '@layouts/Course.astro';
 import { getCollection } from 'astro:content';
-import { capitalizeString, formatWeekString, SYMBOLS } from 'src/global';
+import { capitalizeString, formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 const currentDate = new Date();
 const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
   if (!id.startsWith('computer-science')) return false;
@@ -12,6 +12,12 @@ const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
   if (date.getDate() > currentDate.getDate()) return false;
   return true;
 });
+const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resources'][0]) => {
+  // all slides opened in new tab
+  if (resource.type === 'slides') return '_blank';
+  // external links opened in new tab
+  return resource.href && isHrefExternal(resource.href) ? '_blank' : undefined;
+}
 ---
 
 <Course course="Computer Science" semester="Fall">
@@ -71,9 +77,9 @@ const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
     </thead>
     <tbody>
       {
-        weeklyResources.map(({ id, data }) => (
+        weeklyResources.map(({ id, data }, index) => (
           <tr>
-            <td>{formatWeekString(id.slice(-10))}</td>
+            <td>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</td>
             <td>
               <ul>
                 {
@@ -88,7 +94,7 @@ const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
                 {
                   data.resources.map(resource => (
                     <li>
-                      {SYMBOLS[resource.type]} <a href={resource.href} target="_blank">{resource.title}</a>
+                      {SYMBOLS[resource.type]} <a href={resource.href} target={getResourceTarget(resource)}>{resource.title}</a>
                     </li>
                   ))
                 }
