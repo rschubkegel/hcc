@@ -1,22 +1,31 @@
 ---
 interface Props {
   title?: string;
+  auto?: boolean;
 }
 import Base from '@layouts/Base.astro'
 import 'reveal.js/dist/reveal.css'
 import 'reveal.js/dist/theme/black.css'
 import 'reveal.js/plugin/highlight/monokai.css'
-const { title } = Astro.props
+const { auto, title } = Astro.props
 ---
 
 <script>
   import Reveal from 'reveal.js'
   import RevealNotes from 'reveal.js/plugin/notes/notes'
   import RevealHighlight from 'reveal.js/plugin/highlight/highlight'
-  new Reveal().initialize({ plugins: [RevealNotes, RevealHighlight] })
+  console.log(document.querySelector<HTMLElement>('[data-auto-advance]'))
+  const autoAttr = document.querySelector<HTMLElement>('[data-auto-advance]')?.dataset.autoAdvance
+  const auto = autoAttr !== undefined && autoAttr !== 'false'
+  new Reveal().initialize({
+    autoSlide: auto ? 5000 : undefined,
+    loop: auto,
+    plugins: [RevealNotes, RevealHighlight],
+  })
 </script>
 
 <Base title={ title }>
+  <div data-auto-advance={ auto }></div>
   <div class="reveal">
     <div class="slides">
       <slot></slot>
