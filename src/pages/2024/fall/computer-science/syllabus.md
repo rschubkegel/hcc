@@ -8,13 +8,14 @@ layout: "@layouts/Course.astro"
 
 - **Grades**: 9-12
 - **Class Time**: 8:00am-9:55am
-- **Classroom**: Student Center / Chapel
+- **Classroom**: West Wing, Room 203 (when in-person--see [course structure](#course-structure))
 
 Please note: <mark>this syllabus may be updated</mark> based on the needs of the class and at the discretion of the instructor (the same is true for other course materials).
 
 - [Course Description](#course-description)
 - [Course Objectives](#course-objectives)
 - [Course Structure](#course-structure)
+  - [Virtual Classes](#virtual-classes)
 - [Required Materials](#required-materials)
 - [Grading Policy](#grading-policy)
   - [Letter Grades](#letter-grades)
@@ -23,7 +24,7 @@ Please note: <mark>this syllabus may be updated</mark> based on the needs of the
     - [Projects](#projects)
     - [Quizes](#quizes)
     - [Exams](#exams)
-- [Classroom Expectations](#classroom-expectations)
+- [Behavior Expectations](#behavior-expectations)
 
 ## Course Description
 
@@ -55,13 +56,18 @@ Students will build projects throughout the semester to apply their knowledge. T
 
 ## Course Structure
 
-In-person lectures will only occur *once every two weeks*, with online check-ins required during off-weeks. Check-ins will mimic agile scrum meetings used in professional software development.
+This course is a hybrid which has both in-person and online class times.
 
-Students are encouraged to *take ownership of their own experience in this class*. In addition to completing assignments, students should proactively reach out for help when necessary and inquire about ways to expand projects beyond the minimum requirements. While this is an accredited course, *students will get out of the class what they put in*.
+The first class period (Thursday, September 12th) will be in-person. The following week we will meet at 8:00am online (video platform to be determined). This pattern is repeated throughout the semester, where **every other week is in-person**.
+
+### Virtual Classes
+
+- If students are already present at EBC, they may check out a Chromebook and participate from the student center
+- Students can optionally participate from home or another location (do your best to find a distraction-free environment)
 
 ## Required Materials
 
-Students will need access to a computer with internet access in order to access course materials, complete online quizes, and work on programming assignments.
+Students will need access to a computer with internet access in order to access course materials, complete online quizes, and work on programming assignments. For in-person class time, Chromebooks will be available for students to use (but students can bring their own computer if they have one).
 
 Students (or their parent) are required to sign up for a free account for the online development environment [JDoodle](https://www.jdoodle.com/).
 
@@ -142,7 +148,7 @@ There will be online quizes every week that evaluate non-cumulative knowledge re
 
 There will be two in-person exams: one midterm and one final. Exams will evaluate cumulative knowledge retention.
 
-## Classroom Expectations
+## Behavior Expectations
 
 Students are expected to exemplify the following characteristics:
 
@@ -151,3 +157,7 @@ Students are expected to exemplify the following characteristics:
 - Involvement
 
 Similarly, I will do my best to be respectful, attentive, and encouraging.
+
+<p class="notice">
+Students are encouraged to <em>take ownership of their own experience in this class</em>. In addition to completing assignments, students should proactively reach out for help when necessary and inquire about ways to expand projects beyond the minimum requirements. While this is an accredited course, <em>students will get out of the class what they put in</em>.
+</p>
