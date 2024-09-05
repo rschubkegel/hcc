@@ -2,7 +2,7 @@
   "topics": ["Course Introduction", "What is a Computer"],
   "resources": [
     {
-      "title": "Hello, World!",
+      "title": "Week 1 Slide Deck",
       "href": "/2024/fall/computer-science/slides/hello-world",
       "type": "slides"
     },
@@ -22,7 +22,7 @@
       "type": "video"
     },
     {
-      "title": "Hello, World!",
+      "title": "\"Hello, World!\" Program",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/hello-world"
     },

@@ -23,4 +23,4 @@ Knowing how to take a screenshot will be important if there ever comes a time th
 
 Turn in your assignment by sending me an email at [rylanschubkegel@gmail.com](mailto:rylanschubkegel@gmail.com). Make sure to attach your screenshot to the message! Email is the primary way you can communicate with me throughout the semester.
 
-Please send the message **from your student email**. This email will be used for additional platforms required for this class (Google Form submissions, OneCompiler Studio, etc.).
+Please send the message **from your student email**. This email will be used for additional platforms required for this class (Google Form submissions, JDoodle, etc.).

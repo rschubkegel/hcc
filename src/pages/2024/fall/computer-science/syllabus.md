@@ -63,7 +63,7 @@ Students are encouraged to *take ownership of their own experience in this class
 
 Students will need access to a computer with internet access in order to access course materials, complete online quizes, and work on programming assignments.
 
-Students (or their parent) are required to sign up for a free account for the online development environment [OneCompiler](https://onecompiler.com/).
+Students (or their parent) are required to sign up for a free account for the online development environment [JDoodle](https://www.jdoodle.com/).
 
 No textbooks are required; free digital course materials will be provided throughout the semester.
 
