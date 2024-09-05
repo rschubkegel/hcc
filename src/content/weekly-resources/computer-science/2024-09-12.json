@@ -12,8 +12,8 @@
       "type": "video"
     },
     {
-      "title": "Binary & Data",
-      "href": "https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd",
+      "title": "Electronic Computing",
+      "href": "https://youtu.be/LN0ucKNX0hc?si=NYF-7p3uJ74_VSrL",
       "type": "video"
     },
     {
@@ -22,14 +22,29 @@
       "type": "video"
     },
     {
-      "title": "\"Hello, World!\" Program",
-      "type": "assignment",
-      "href": "/2024/fall/computer-science/assignments/hello-world"
+      "title": "Binary & Data",
+      "href": "https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd",
+      "type": "video"
+    },
+    {
+      "title": "Representing Numbers & Letters...",
+      "href": "https://youtu.be/1GSjbWt0c9M?si=OOVkI2WyUrwI1m0W",
+      "type": "video"
+    },
+    {
+      "title": "Binary Arithmetic",
+      "href": "https://ryanstutorials.net/binary-tutorial/binary-arithmetic.php",
+      "type": "article"
     },
     {
       "title": "Week 1 Quiz",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSfvyb2I-n3cQyVcweuisBHtocjiH_kcr_5J9WwOMM8Ag_J0pQ/viewform?usp=sf_link",
       "type": "assignment"
+    },
+    {
+      "title": "\"Hello, World!\" Program",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/hello-world"
     }
   ]
 }
