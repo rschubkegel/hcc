@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
+    "@astrojs/preact": "^3.5.3",
     "@types/luxon": "^3.4.2",
     "astro": "^4.13.0",
     "luxon": "^3.5.0",
+    "preact": "^10.23.2",
     "reveal.js": "^5.1.0",
     "typescript": "^5.5.2"
   },

@@ -1,23 +1,18 @@
 ---
 import Course from '@layouts/Course.astro';
 import { getCollection } from 'astro:content';
-import { capitalizeString, formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
-const currentDate = new Date();
+import { assignedBeforeNow, capitalizeString, formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
   if (!id.startsWith('computer-science')) return false;
   if (import.meta.env.DEV) return true;
-  const date = new Date(id.slice(-10));
-  if (date.getFullYear() > currentDate.getFullYear()) return false;
-  if (date.getMonth() > currentDate.getMonth()) return false;
-  if (date.getDate() > currentDate.getDate()) return false;
-  return true;
+  return assignedBeforeNow(id);
 });
 const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resources'][0]) => {
   // all slides opened in new tab
   if (resource.type === 'slides') return '_blank';
   // external links opened in new tab
   return resource.href && isHrefExternal(resource.href) ? '_blank' : undefined;
-}
+};
 ---
 
 <Course course="Computer Science" semester="Fall">

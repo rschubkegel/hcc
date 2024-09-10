@@ -1,12 +1,17 @@
 import type { InferEntrySchema } from 'astro:content';
 import { DateTime } from 'luxon';
 
+/** Current date for use in global functions used in SSG */
+const currentDate = new Date();
+
 export const SYMBOLS: Record<InferEntrySchema<'weekly-resources'>['resources'][number]['type'], string> = {
   'article': '📖',
   'assignment': '📝',
   'slides': '🎞️',
   'video': '📽️',
 };
+
+export const GATEKEEPER_PASSWORD = 'compscirocks';
 
 export const capitalizeString = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
@@ -26,3 +31,16 @@ export const unslugify = (str: string) => str.split('-').map(x => x.charAt(0).to
 
 /** Checks if a string is an external link */
 export const isHrefExternal = (href: string) => /^https?:\/\//.test(href);
+
+/**
+ * Checks if an assignment is assigned before the current date.
+ *
+ * @param {string} id - The id of the assignment
+ */
+export const assignedBeforeNow = (id: string) => {
+  const date = new Date(id.slice(-10));
+  if (date.getFullYear() > currentDate.getFullYear()) return false;
+  if (date.getMonth() > currentDate.getMonth()) return false;
+  if (date.getDate() > currentDate.getDate()) return false;
+  return true;
+}
