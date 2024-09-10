@@ -33,13 +33,19 @@ const Form = ({ onSubmit }: { onSubmit: TOnSubmit }) => {
       }
     }
   }, [setPassword]);
+  const onChange = useCallback<JSX.GenericEventHandler<HTMLInputElement>>(event => {
+    if (event.target instanceof HTMLInputElement) {
+      setPassword(event.target.value);
+    }
+  }, [setPassword]);
   useEffect(() => {
     focusRef.current?.focus();
+    setPassword(focusRef.current?.value || '');
   }, []);
   return (
     <form action="" onSubmitCapture={_onSubmit}>
       <div style="display: flex; gap: 1rem;">
-        <input ref={focusRef} type="password" name="password" placeholder="Password" value={password} onInput={onInput} style="flex-grow: 1" />
+        <input ref={focusRef} type="password" name="password" placeholder="Password" value={password} onInput={onInput} onChange={onChange} style="flex-grow: 1" />
         <input type="submit" value="Submit" />
       </div>
     </form>
