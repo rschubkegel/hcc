@@ -4,42 +4,50 @@
     {
       "title": "Operating Systems",
       "type": "video",
-      "href": "https://youtu.be/26QPDBe-NB8?si=p6KmuaqJM5xXJCRm"
+      "href": "https://youtu.be/26QPDBe-NB8?si=p6KmuaqJM5xXJCRm",
+      "time": 14
     },
     {
       "title": "Variables in Python",
       "type": "article",
-      "href": "https://realpython.com/python-variables/"
+      "href": "https://realpython.com/python-variables/",
+      "time": 10
     },
     {
       "title": "Control Flow",
       "type": "article",
-      "href": "https://www.codecademy.com/resources/docs/general/control-flow/"
+      "href": "https://www.codecademy.com/resources/docs/general/control-flow/",
+      "time": 2
     },
     {
       "title": "Control Flow in Python",
       "type": "video",
-      "href": "https://youtu.be/Zp5MuPOtsSY?si=aan38X8g9lOzrFFl"
+      "href": "https://youtu.be/Zp5MuPOtsSY?si=aan38X8g9lOzrFFl",
+      "time": 16
     },
     {
       "title": "Looping Over Lists in Python",
       "type": "video",
-      "href": "https://youtu.be/9ueMumuFv6g?si=VZnqla_X8UeFRtM-"
+      "href": "https://youtu.be/9ueMumuFv6g?si=VZnqla_X8UeFRtM-",
+      "time": 3
     },
     {
       "title": "For Loops in Python",
       "type": "video",
-      "href": "https://youtu.be/94UHCEmprCY?si=Rf4FVzOQa8q1v3IC"
+      "href": "https://youtu.be/94UHCEmprCY?si=Rf4FVzOQa8q1v3IC",
+      "time": 15
     },
     {
       "title": "Quiz: Week 2",
       "type": "assignment",
-      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeCluxDwXEppbINHm76RpJeIzUMhS1pF1DQVNyRZ8_NnVqt6A/viewform?usp=sf_link"
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeCluxDwXEppbINHm76RpJeIzUMhS1pF1DQVNyRZ8_NnVqt6A/viewform?usp=sf_link",
+      "time": 15
     },
     {
       "title": "Project: Password Generator",
       "type": "assignment",
-      "href": "/2024/fall/computer-science/assignments/password-generator"
+      "href": "/2024/fall/computer-science/assignments/password-generator",
+      "time": 30
     }
   ]
 }

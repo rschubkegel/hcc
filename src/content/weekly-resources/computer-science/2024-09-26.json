@@ -4,22 +4,26 @@
     {
       "title": "What is the Internet?",
       "href": "https://youtu.be/Dxcc6ycZ73M?si=xAxFcJWZr-kCH13Y",
-      "type": "video"
+      "type": "video",
+      "time": 4
     },
     {
       "title": "Wires, Cables & Wifi",
       "href": "https://youtu.be/ZhEf7e4kopM?si=cSM97bwhZdxZswK_",
-      "type": "video"
+      "type": "video",
+      "time": 7
     },
     {
       "title": "Cybersecurity & Crime",
       "href": "https://youtu.be/AuYNXgO_f3Y?si=ZHW4Fzvwf9rJKo0p",
-      "type": "video"
+      "type": "video",
+      "time": 5
     },
     {
       "title": "How Search Works",
       "href": "https://youtu.be/LVV_93mBfSU?si=tz6NMFcOnhQlUovi",
-      "type": "video"
+      "type": "video",
+      "time": 5
     }
   ]
 }

@@ -7,6 +7,8 @@ const basicResourceSchema = z.object({
   href: z.string().optional(),
   /** Type of resource */
   type: z.enum(['slides', 'video', 'article', 'assignment']),
+  /** Time estimate (in minutes); used to estimate student effort */
+  time: z.number(),
 });
 
 const resourcesSchema = z.array(

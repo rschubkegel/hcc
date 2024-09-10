@@ -4,47 +4,56 @@
     {
       "title": "Week 1 Slide Deck",
       "href": "/2024/fall/computer-science/slides/hello-world",
-      "type": "slides"
+      "type": "slides",
+      "time": 110
     },
     {
       "title": "What Makes a Computer...",
       "href": "https://youtu.be/mCq8-xTH7jA?si=Xd8vFaW51kNiU0af",
-      "type": "video"
+      "type": "video",
+      "time": 5
     },
     {
       "title": "Electronic Computing",
       "href": "https://youtu.be/LN0ucKNX0hc?si=NYF-7p3uJ74_VSrL",
-      "type": "video"
+      "type": "video",
+      "time": 10
     },
     {
       "title": "Circuits & Logic",
       "href": "https://youtu.be/ZoqMiFKspAA?si=daBAe7nFXQRLSQmT",
-      "type": "video"
+      "type": "video",
+      "time": 5
     },
     {
       "title": "Binary & Data",
       "href": "https://youtu.be/USCBCmwMCDA?si=nCEga3cOwmyZgZLd",
-      "type": "video"
+      "type": "video",
+      "time": 6
     },
     {
       "title": "Representing Numbers & Letters...",
       "href": "https://youtu.be/1GSjbWt0c9M?si=OOVkI2WyUrwI1m0W",
-      "type": "video"
+      "type": "video",
+      "time": 11
     },
     {
       "title": "Binary Arithmetic",
       "href": "https://ryanstutorials.net/binary-tutorial/binary-arithmetic.php",
-      "type": "article"
+      "type": "article",
+      "time": 10
     },
     {
       "title": "Quiz: Week 1",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSfvyb2I-n3cQyVcweuisBHtocjiH_kcr_5J9WwOMM8Ag_J0pQ/viewform?usp=sf_link",
-      "type": "assignment"
+      "type": "assignment",
+      "time": 15
     },
     {
       "title": "Project: \"Hello, World!\"",
       "type": "assignment",
-      "href": "/2024/fall/computer-science/assignments/hello-world"
+      "href": "/2024/fall/computer-science/assignments/hello-world",
+      "time": 15
     }
   ]
 }
