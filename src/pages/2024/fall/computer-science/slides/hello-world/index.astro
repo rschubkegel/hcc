@@ -1,5 +1,6 @@
 ---
 import Slides from '@layouts/Slides.astro'
+import mooresLawImg from './moores-law-graph.jpg';
 ---
 
 <Slides title="Hello, World!">
@@ -156,7 +157,7 @@ import Slides from '@layouts/Slides.astro'
     <section>
       Moore's Law
       <blockquote><small>The number of transistors on a microchip doubles approximately every two years.</small></blockquote>
-      <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblacksummitfg.com%2Fwp-content%2Fuploads%2F2019%2F12%2FMoores-law.jpg&f=1&nofb=1&ipt=7a79f679dcd962bb2e6bd64e3048698ea8d40985b3c69f06528202264de70699&ipo=images" height="400">
+      <img src={mooresLawImg.src} height="400">
       <aside class="notes">
         <p>
           Proposed by Gordon Moore, co-founder of Intel, in 1965.
