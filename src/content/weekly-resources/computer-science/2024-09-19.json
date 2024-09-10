@@ -7,6 +7,31 @@
       "href": "https://youtu.be/26QPDBe-NB8?si=p6KmuaqJM5xXJCRm"
     },
     {
+      "title": "Variables in Python",
+      "type": "article",
+      "href": "https://realpython.com/python-variables/"
+    },
+    {
+      "title": "Control Flow",
+      "type": "article",
+      "href": "https://www.codecademy.com/resources/docs/general/control-flow/"
+    },
+    {
+      "title": "Control Flow in Python",
+      "type": "video",
+      "href": "https://youtu.be/Zp5MuPOtsSY?si=aan38X8g9lOzrFFl"
+    },
+    {
+      "title": "Looping Over Lists in Python",
+      "type": "video",
+      "href": "https://youtu.be/9ueMumuFv6g?si=VZnqla_X8UeFRtM-"
+    },
+    {
+      "title": "For Loops in Python",
+      "type": "video",
+      "href": "https://youtu.be/94UHCEmprCY?si=Rf4FVzOQa8q1v3IC"
+    },
+    {
       "title": "Quiz: Week 2",
       "type": "assignment",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSeCluxDwXEppbINHm76RpJeIzUMhS1pF1DQVNyRZ8_NnVqt6A/viewform?usp=sf_link"
