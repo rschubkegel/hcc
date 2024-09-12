@@ -17,7 +17,7 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     <p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
     <p><cite>Phil Karlton</cite></p>
   </blockquote>
-  <h2>Course Resources</h2>
+  <h2>Course <span class="instructor-button">Resources</span></h2>
   <p>These resources will be used throughout the entirety of the course.</p>
   <table>
     <tbody>
@@ -100,3 +100,20 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     </tbody>
   </table>
 </Course>
+
+<script>
+  const PAGE = '/instructor';
+  let ctrlDown = false;
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Control') ctrlDown = true;
+  });
+  document.addEventListener('keyup', event => {
+    if (event.key === 'Control') ctrlDown = false;
+  });
+  document.querySelector<HTMLElement>('.instructor-button')?.addEventListener('click', event => {
+    if (ctrlDown) {
+      event.preventDefault();
+      window.location.href += PAGE;
+    }
+  });
+</script>
