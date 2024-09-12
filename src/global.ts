@@ -1,9 +1,6 @@
 import type { InferEntrySchema } from 'astro:content';
 import { DateTime } from 'luxon';
 
-/** Current date for use in global functions used in SSG */
-const currentDate = new Date();
-
 export const SYMBOLS: Record<InferEntrySchema<'weekly-resources'>['resources'][number]['type'], string> = {
   'article': '📖',
   'assignment': '📝',
@@ -38,9 +35,7 @@ export const isHrefExternal = (href: string) => /^https?:\/\//.test(href);
  * @param {string} id - The id of the assignment
  */
 export const assignedBeforeNow = (id: string) => {
-  const date = new Date(id.slice(-10));
-  if (date.getFullYear() > currentDate.getFullYear()) return false;
-  if (date.getMonth() > currentDate.getMonth()) return false;
-  if (date.getDate() > currentDate.getDate()) return false;
-  return true;
-}
+  const date = DateTime.fromISO(id.slice(-10), { zone: 'America/Los_Angeles' });
+  const { milliseconds } = date.diffNow();
+  return milliseconds < 0;
+};

@@ -1,12 +1,9 @@
 ---
 import Course from '@layouts/Course.astro';
+import ShowOnOrAfterToday from '@components/ShowOnOrAfterToday';
 import { getCollection } from 'astro:content';
-import { assignedBeforeNow, capitalizeString, formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
-const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
-  if (!id.startsWith('computer-science')) return false;
-  if (import.meta.env.DEV) return true;
-  return assignedBeforeNow(id);
-});
+import { capitalizeString, formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
+const weeklyResources = (await getCollection('weekly-resources', ({ id }) => /computer-science/.test(id)));
 const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resources'][0]) => {
   // all slides opened in new tab
   if (resource.type === 'slides') return '_blank';
@@ -73,29 +70,31 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     <tbody>
       {
         weeklyResources.map(({ id, data }, index) => (
-          <tr>
-            <td>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</td>
-            <td>
-              <ul>
-                {
-                  data.topics.map(topic => (
-                    <li>{topic}</li>
-                  ))
-                }
-              </ul>
-            </td>
-            <td>
-              <ul class="emoji">
-                {
-                  data.resources.map(resource => (
-                    <li>
-                      {SYMBOLS[resource.type]} <a href={resource.href} target={getResourceTarget(resource)}>{resource.title}</a>
-                    </li>
-                  ))
-                }
-              </ul>
-            </td>
-          </tr>
+          <ShowOnOrAfterToday client:load date={id.slice(-10)}>
+            <tr>
+              <td>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</td>
+              <td>
+                <ul>
+                  {
+                    data.topics.map(topic => (
+                      <li>{topic}</li>
+                    ))
+                  }
+                </ul>
+              </td>
+              <td>
+                <ul class="emoji">
+                  {
+                    data.resources.map(resource => (
+                      <li>
+                        {SYMBOLS[resource.type]} <a href={resource.href} target={getResourceTarget(resource)}>{resource.title}</a>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </td>
+            </tr>
+          </ShowOnOrAfterToday>
         ))
       }
     </tbody>
