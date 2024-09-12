@@ -2,7 +2,7 @@
   "topics": ["Course Introduction", "What is a Computer", "Computer Languages"],
   "resources": [
     {
-      "title": "Week 1 Slide Deck",
+      "title": "Week 2 Slide Deck",
       "href": "/2024/fall/computer-science/slides/hello-world",
       "type": "slides",
       "time": 110
@@ -44,7 +44,7 @@
       "time": 10
     },
     {
-      "title": "Quiz: Week 1",
+      "title": "Quiz: Week 2",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSfvyb2I-n3cQyVcweuisBHtocjiH_kcr_5J9WwOMM8Ag_J0pQ/viewform?usp=sf_link",
       "type": "assignment",
       "time": 15
