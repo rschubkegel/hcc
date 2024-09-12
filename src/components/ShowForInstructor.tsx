@@ -1,7 +1,7 @@
 /**
- * Intended to "gatekeep" access to content in component `children`.
+ * Shows child content once authenticated via password.
  *
- * This is a hacky, insecure alternative to full authentication.
+ * NOTE: this is *not secure* because it just checks input against a hardcoded password.
  */
 
 import { useCallback, useEffect, useRef, useState } from 'preact/compat';

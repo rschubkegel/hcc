@@ -2,11 +2,8 @@
 import Course from '@layouts/Course.astro';
 import { getCollection } from 'astro:content';
 import { formatWeekString } from 'src/global';
-import Gatekeeper from '@components/Gatekeeper.tsx';
-const weeklyResources = await getCollection('weekly-resources', ({ id }) => {
-  if (!id.startsWith('computer-science')) return false;
-  return true;
-});
+import Gatekeeper from '@components/ShowForInstructor.tsx';
+const weeklyResources = (await getCollection('weekly-resources', ({ id }) => /computer-science/.test(id)));
 const weeklyEstimates = weeklyResources.map(({ data, id }) => ({
   date: id.slice(-10),
   minutes: data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0),
