@@ -23,5 +23,53 @@
 			"\t<p>$1</p>",
 			"</aside>"
 		]
+	},
+	"Resource: Article": {
+		"scope": "json",
+		"prefix": "r:article",
+		"body": [
+			"{",
+			"\t\"title\": \"${2:Lorem Ipsum}\",",
+			"\t\"type\": \"article\",",
+			"\t\"href\": \"$1\",",
+			"\t\"time\": ${3:5}",
+			"}${4:,}"
+		]
+	},
+	"Resource: Video": {
+		"scope": "json",
+		"prefix": "r:video",
+		"body": [
+			"{",
+			"\t\"title\": \"${2:Lorem Ipsum}\",",
+			"\t\"type\": \"video\",",
+			"\t\"href\": \"$1\",",
+			"\t\"time\": ${3:5}",
+			"}${4:,}"
+		]
+	},
+	"Resource: Assignment": {
+		"scope": "json",
+		"prefix": "r:assignment",
+		"body": [
+			"{",
+			"\t\"title\": \"${2:Lorem Ipsum}\",",
+			"\t\"type\": \"assignment\",",
+			"\t\"href\": \"$1\",",
+			"\t\"time\": ${3:15}",
+			"}${4:,}"
+		]
+	},
+	"Resource: Slide Deck": {
+		"scope": "json",
+		"prefix": "r:slides",
+		"body": [
+			"{",
+			"\t\"title\": \"${2:Lorem Ipsum}\",",
+			"\t\"type\": \"slides\",",
+			"\t\"href\": \"$1\",",
+			"\t\"time\": 110",
+			"}${4:,}"
+		]
 	}
 }

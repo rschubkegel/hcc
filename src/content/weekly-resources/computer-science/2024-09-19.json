@@ -1,5 +1,5 @@
 {
-  "topics": ["Operating Systems", "Variables", "Control Flow"],
+  "topics": ["Operating Systems", "Data Types", "Operators", "Loops"],
   "resources": [
     {
       "title": "Operating Systems",
@@ -8,10 +8,10 @@
       "time": 14
     },
     {
-      "title": "Variables in Python",
+      "title": "Data Types",
       "type": "article",
-      "href": "https://realpython.com/python-variables/",
-      "time": 10
+      "href": "https://www.w3schools.com/python/python_datatypes.asp",
+      "time": 2
     },
     {
       "title": "Control Flow",
@@ -20,10 +20,16 @@
       "time": 2
     },
     {
-      "title": "Control Flow in Python",
-      "type": "video",
-      "href": "https://youtu.be/Zp5MuPOtsSY?si=aan38X8g9lOzrFFl",
-      "time": 16
+      "title": "Python While Loops",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_while_loops.asp",
+      "time": 2
+    },
+    {
+      "title": "Python For Loops",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_for_loops.asp",
+      "time": 3
     },
     {
       "title": "Looping Over Lists in Python",

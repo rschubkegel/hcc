@@ -1,5 +1,5 @@
 {
-  "topics": ["Course Introduction", "What is a Computer", "Computer Languages"],
+  "topics": ["Course Introduction", "What is a Computer", "Computer Languages", "Python Variables", "Python Conditions"],
   "resources": [
     {
       "title": "Week 2 Slide Deck",
@@ -44,6 +44,36 @@
       "time": 10
     },
     {
+      "title": "Variables in Python",
+      "href": "https://www.pythontutorial.net/python-basics/python-variables/",
+      "type": "article",
+      "time": 3
+    },
+    {
+      "title": "Python Variables",
+      "href": "https://www.youtube.com/watch?v=Gf9wLsCJDqc",
+      "type": "video",
+      "time": 2
+    },
+    {
+      "title": "Python Conditions",
+      "href": "https://www.w3schools.com/python/python_conditions.asp",
+      "type": "article",
+      "time": 5
+    },
+    {
+      "title": "Control Flow in Python",
+      "href": "https://youtu.be/Zp5MuPOtsSY?si=aan38X8g9lOzrFFl",
+      "type": "video",
+      "time": 16
+    },
+    {
+      "title": "Availability Poll",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSemU0OkV_KNN7wrI9iHyp1zmTv-8rGCo7zgHifoHvxm5ySVoQ/viewform?usp=sf_link",
+      "time": 0
+    },
+    {
       "title": "Quiz: Week 2",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSfvyb2I-n3cQyVcweuisBHtocjiH_kcr_5J9WwOMM8Ag_J0pQ/viewform?usp=sf_link",
       "type": "assignment",
@@ -53,7 +83,13 @@
       "title": "Project: \"Hello, World!\"",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/hello-world",
-      "time": 15
+      "time": 10
+    },
+    {
+      "title": "Project: Make a Quiz",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/quiz",
+      "time": 30
     }
   ]
 }
