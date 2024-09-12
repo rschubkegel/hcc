@@ -17,7 +17,7 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     <p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
     <p><cite>Phil Karlton</cite></p>
   </blockquote>
-  <h2>Course <span class="instructor-button">Resources</span></h2>
+  <h2>Course Resources</h2>
   <p>These resources will be used throughout the entirety of the course.</p>
   <table>
     <tbody>
@@ -104,14 +104,17 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
 <script>
   const PAGE = '/instructor';
   let ctrlDown = false;
+  let shiftDown = false;
   document.addEventListener('keydown', event => {
     if (event.key === 'Control') ctrlDown = true;
+    if (event.key === 'Shift') shiftDown = true;
   });
   document.addEventListener('keyup', event => {
     if (event.key === 'Control') ctrlDown = false;
+    if (event.key === 'Shift') shiftDown = false;
   });
-  document.querySelector<HTMLElement>('.instructor-button')?.addEventListener('click', event => {
-    if (ctrlDown) {
+  document.querySelector<HTMLElement>('a[href="/"]')?.addEventListener('click', event => {
+    if (ctrlDown && shiftDown) {
       event.preventDefault();
       window.location.href += PAGE;
     }
