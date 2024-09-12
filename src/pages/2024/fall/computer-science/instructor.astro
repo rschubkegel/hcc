@@ -1,7 +1,7 @@
 ---
 import Course from '@layouts/Course.astro';
 import { getCollection } from 'astro:content';
-import { formatWeekString } from 'src/global';
+import { formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 import Gatekeeper from '@components/ShowForInstructor.tsx';
 const weeklyResources = (await getCollection('weekly-resources', ({ id }) => /computer-science/.test(id)));
 const weeklyEstimates = weeklyResources.map(({ data, id }) => ({
@@ -9,6 +9,12 @@ const weeklyEstimates = weeklyResources.map(({ data, id }) => ({
   minutes: data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0),
 }));
 const totalMinutes = weeklyEstimates.reduce((a, b) => a + b.minutes, 0);
+const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resources'][0]) => {
+  // all slides opened in new tab
+  if (resource.type === 'slides') return '_blank';
+  // external links opened in new tab
+  return resource.href && isHrefExternal(resource.href) ? '_blank' : undefined;
+};
 ---
 
 <Course course="Computer Science" semester="Fall">
@@ -17,9 +23,48 @@ const totalMinutes = weeklyEstimates.reduce((a, b) => a + b.minutes, 0);
   </p>
   <h1>Instructor Page</h1>
   <p>Contains information that <strong>should only be viewed by the instructor</strong>.</p>
-  <section>
+  <main>
     <Gatekeeper client:load>
       <div>
+        <h2>All Weekly Resources</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Dates</th>
+              <th>Topic(s)</th>
+              <th>Resources</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              weeklyResources.map(({ id, data }, index) => (
+                <tr>
+                  <td>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</td>
+                  <td>
+                    <ul>
+                      {
+                        data.topics.map(topic => (
+                          <li>{topic}</li>
+                        ))
+                      }
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="emoji">
+                      {
+                        data.resources.map(resource => (
+                          <li>
+                            {SYMBOLS[resource.type]} <a href={resource.href} target={getResourceTarget(resource)}>{resource.title}</a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
         <h2>Time Estimates</h2>
         <table>
           <thead>
@@ -48,5 +93,5 @@ const totalMinutes = weeklyEstimates.reduce((a, b) => a + b.minutes, 0);
         </table>
       </div>
     </Gatekeeper>
-  </section>
+  </main>
 </Course>
