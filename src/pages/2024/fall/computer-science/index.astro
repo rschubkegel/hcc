@@ -102,21 +102,28 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
 </Course>
 
 <script>
+  /**
+   * If the user presses and holds the "instructor" link,
+   * it will redirect them to the "instructor" page.
+   */
   const PAGE = '/instructor';
-  let ctrlDown = false;
-  let shiftDown = false;
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Control') ctrlDown = true;
-    if (event.key === 'Shift') shiftDown = true;
-  });
-  document.addEventListener('keyup', event => {
-    if (event.key === 'Control') ctrlDown = false;
-    if (event.key === 'Shift') shiftDown = false;
-  });
-  document.querySelector<HTMLElement>('a[href="/"]')?.addEventListener('click', event => {
-    if (ctrlDown && shiftDown) {
-      event.preventDefault();
-      window.location.href += PAGE;
-    }
-  });
+  const HOLD_TIME = 800;
+  const element = document.querySelector<HTMLElement>('a[href="/"]');
+  if (element) {
+    let mouseDownTime = 0;
+    element.style.transition = `scale ${HOLD_TIME / 2}ms`;
+    element.style.display = 'inline-block';
+    element.addEventListener('pointerdown', () => {
+      mouseDownTime = Date.now();
+      setTimeout(() => {
+        element.style.scale = '1.1';
+      }, HOLD_TIME / 2);
+    });
+    element.addEventListener('click', event => {
+      if (Date.now() - mouseDownTime >= HOLD_TIME) {
+        event.preventDefault();
+        window.location.href += PAGE;
+      }
+    });
+  }
 </script>
