@@ -17,7 +17,7 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     <p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
     <p><cite>Phil Karlton</cite></p>
   </blockquote>
-  <h2>Course Resources</h2>
+  <h2><span class="secret-link">Course</span> Resources</h2>
   <p>These resources will be used throughout the entirety of the course.</p>
   <table>
     <tbody>
@@ -102,27 +102,13 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
 </Course>
 
 <script>
-  /**
-   * If the user presses and holds the "instructor" link,
-   * it will redirect them to the "instructor" page.
-   */
-  const PAGE = '/instructor';
-  const HOLD_TIME = 800;
-  const element = document.querySelector<HTMLElement>('a[href="/"]');
+  let clicks = 0;
+  const element = document.querySelector<HTMLElement>('.secret-link');
   if (element) {
-    let mouseDownTime = 0;
-    element.style.transition = `scale ${HOLD_TIME / 2}ms`;
-    element.style.display = 'inline-block';
-    element.addEventListener('pointerdown', () => {
-      mouseDownTime = Date.now();
-      setTimeout(() => {
-        element.style.scale = '1.1';
-      }, HOLD_TIME / 2);
-    });
-    element.addEventListener('click', event => {
-      if (Date.now() - mouseDownTime >= HOLD_TIME) {
-        event.preventDefault();
-        window.location.href += PAGE;
+    element.addEventListener('click', () => {
+      clicks += 1;
+      if (clicks === 3) {
+        window.location.href += '/instructor';
       }
     });
   }
