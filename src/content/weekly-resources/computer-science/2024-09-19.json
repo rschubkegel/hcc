@@ -8,6 +8,18 @@
       "time": 14
     },
     {
+      "title": "Intro to File Systems",
+      "type": "article",
+      "href": "https://www.ufsexplorer.com/articles/file-systems-basics/",
+      "time": 5
+    },
+    {
+      "title": "What is Permanent Storage?",
+      "type": "article",
+      "href": "https://www.computerhope.com/jargon/p/permstor.htm",
+      "time": 2
+    },
+    {
       "title": "Data Types",
       "type": "article",
       "href": "https://www.w3schools.com/python/python_datatypes.asp",
