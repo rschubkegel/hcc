@@ -2,6 +2,12 @@
   "topics": ["Operating Systems", "Data Types", "Operators", "Loops"],
   "resources": [
     {
+      "title": "Week 3 Slide Deck",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/operating-systems",
+      "time": 110
+    },
+    {
       "title": "Operating Systems",
       "type": "video",
       "href": "https://youtu.be/26QPDBe-NB8?si=p6KmuaqJM5xXJCRm",
