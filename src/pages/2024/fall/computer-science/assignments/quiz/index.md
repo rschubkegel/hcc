@@ -7,7 +7,7 @@ title: "Assignment: Hello, World!"
 
 # Make a Quiz
 
-<mark>Due 09/17 at 11:59</mark>
+<mark>Due 09/18 at 11:59</mark>
 
 Make a quiz about something you're passionate about! Sports, music, games... the sky is the limit. Your quiz should follow these specifications:
 

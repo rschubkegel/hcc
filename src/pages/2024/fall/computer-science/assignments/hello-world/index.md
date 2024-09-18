@@ -7,7 +7,7 @@ title: "Assignment: Hello, World!"
 
 # Hello, World!
 
-<mark>Due 09/17 at 11:59</mark>
+<mark>Due 09/18 at 11:59</mark>
 
 A classic first program to test that your toolchain (runtime environment, compiler, <abbr title="integrated development environment">IDE</abbr>, etc.) is set up properly is the "Hello, World!" program.
 
