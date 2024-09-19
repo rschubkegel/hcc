@@ -92,15 +92,15 @@
       "time": 45
     },
     {
+      "title": "Set Up Replit",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/setup-replit",
+      "time": 15
+    },
+    {
       "title": "Project: Guess the Number",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/guess-the-number",
-      "time": 25
-    },
-    {
-      "title": "Project: Password Generator",
-      "type": "assignment",
-      "href": "/2024/fall/computer-science/assignments/password-generator",
       "time": 45
     }
   ]

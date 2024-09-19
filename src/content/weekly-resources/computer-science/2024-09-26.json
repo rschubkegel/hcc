@@ -24,6 +24,12 @@
       "href": "https://youtu.be/LVV_93mBfSU?si=tz6NMFcOnhQlUovi",
       "type": "video",
       "time": 5
+    },
+    {
+      "title": "Lorem Ipsum",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/password-generator",
+      "time": 45
     }
   ]
 }

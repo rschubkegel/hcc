@@ -7,7 +7,7 @@ title: "Assignment: Password Generator"
 
 # Password Generator
 
-<mark>Due 09/25 at 11:59</mark>
+<mark>Due 10/02 at 11:59</mark>
 
 A good safety practice is to _randomly generate your passwords_; this makes it very difficult for a hacker to guess your password. In this assignment, you will implement your own password generator.
 
