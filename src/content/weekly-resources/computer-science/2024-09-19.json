@@ -5,7 +5,13 @@
       "title": "Week 3 Slide Deck",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/operating-systems",
-      "time": 110
+      "time": 80
+    },
+    {
+      "title": "Week 3 Lecture",
+      "type": "video",
+      "href": "https://drive.google.com/file/d/1NcUfNz3hEUv1kkn9AzB3d3T2hQi0kOsy/view?usp=drive_link",
+      "time": 80
     },
     {
       "title": "Operating Systems",
