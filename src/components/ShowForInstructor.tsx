@@ -53,7 +53,7 @@ const Form = ({ onSubmit }: { onSubmit: TOnSubmit }) => {
 }
 
 export default (props: TProps) => {
-  const [admitted, setAdmitted] = useState(false);
+  const [admitted, setAdmitted] = useState(process.env.NODE_ENV === 'development');
   const onSubmit = useCallback<TOnSubmit>((data: TFormData) => {
     if (data.password === GATEKEEPER_PASSWORD) {
       setAdmitted(true);
