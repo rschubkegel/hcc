@@ -26,6 +26,12 @@
       "time": 2
     },
     {
+      "title": "Python Variables",
+      "type": "video",
+      "href": "https://www.youtube.com/watch?v=cQT33yu9pY8",
+      "time": 7
+    },
+    {
       "title": "Data Types",
       "type": "article",
       "href": "https://www.w3schools.com/python/python_datatypes.asp",
@@ -36,6 +42,12 @@
       "type": "article",
       "href": "https://www.codecademy.com/resources/docs/general/control-flow/",
       "time": 2
+    },
+    {
+      "title": "If statements in Python",
+      "type": "video",
+      "href": "https://youtu.be/FvMPfrgGeKs?si=QInNrEVwx1MmN4Dt",
+      "time": 9
     },
     {
       "title": "Python While Loops",
@@ -62,16 +74,28 @@
       "time": 15
     },
     {
+      "title": "Python Operators",
+      "type": "article",
+      "href": "https://learnpython.com/blog/python-operators-cheat-sheet/",
+      "time": 20
+    },
+    {
       "title": "Quiz: Week 3",
       "type": "assignment",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSeCluxDwXEppbINHm76RpJeIzUMhS1pF1DQVNyRZ8_NnVqt6A/viewform?usp=sf_link",
       "time": 15
     },
     {
+      "title": "Project: Guess the Number",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/guess-the-number",
+      "time": 25
+    },
+    {
       "title": "Project: Password Generator",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/password-generator",
-      "time": 30
+      "time": 45
     }
   ]
 }
