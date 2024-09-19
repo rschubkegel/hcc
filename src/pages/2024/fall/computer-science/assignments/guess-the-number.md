@@ -46,6 +46,48 @@ randint(1, 10)
 
 > Computers can generate numbers that appear to be random, but they are not truly random. This is because computers are deterministic machines, meaning that their output is determined by their input and the algorithms used to process that input.
 
+### Example Code
+
+Since I did not record the activity/project time during class, here is the code that we "pair programmed" to help you out. Make sure to fill out the `TODO` comments with your own code to meet the specifications listed above!
+
+```py
+# Import random module
+from random import randint
+
+# Ask user for "difficulty" (number range)
+# TODO
+
+# Set up "answer" variable
+# TODO replace 10 with number range from above
+answer = randint(1, 10)
+
+# Set up "guess" variable
+guess = 0
+
+# Set up "score" variable
+# TODO
+
+# Until the user answers correctly...
+while guess != answer:
+  # Ask the user for a guess and convert to integer
+  guess = int( input("What is your guess? ") )
+
+  # If the guess was correct, exit the loop
+  if guess == answer:
+    print("You are correct!")
+
+  # If the guess was incorrect, continue
+  if guess > answer:
+    print("You were too high.")
+  if guess < answer:
+    print("You were too low.")
+
+# Tell the user their score
+# TODO
+
+# Done 🎉
+```
+
 ### Submit
 
 Make sure you test your program before submitting!
