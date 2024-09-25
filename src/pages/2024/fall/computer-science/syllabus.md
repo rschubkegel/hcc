@@ -69,7 +69,7 @@ The first class period (Thursday, September 12th) will be in-person. The followi
 
 Students will need access to a computer with internet access in order to access course materials, complete online quizes, and work on programming assignments. For in-person class time, Chromebooks will be available for students to use (but students can bring their own computer if they have one).
 
-Students (or their parent) are required to sign up for a free account for the online development environment [JDoodle](https://www.jdoodle.com/).
+Students (or their parent) are required to sign up for a free account for the online development environment [Replit](https://replit.com/).
 
 No textbooks are required; free digital course materials will be provided throughout the semester.
 
