@@ -92,4 +92,4 @@ while guess != answer:
 
 Make sure you test your program before submitting!
 
-<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScbsk31ajIH5YqWfpNt1NcUuTIQM5-HEv7A1ow3JIkQUEa_Jw/viewform?usp=sf_link" class="button">Submit Assignment</a></p>
+<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScbsk31ajIH5YqWfpNt1NcUuTIQM5-HEv7A1ow3JIkQUEa_Jw/viewform?usp=sf_link" target="_blank" class="button">Submit Assignment</a></p>

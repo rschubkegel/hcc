@@ -91,6 +91,6 @@ To turn in your project, download the Python file by pressing the "Save (to loca
 
 Upload the `.py` file to the assignment submission form:
 
-<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfzWOLGeGBT8trx3xkOuYoUNKdoAcEuVYghNHSwQDspnpwv5g/viewform?usp=sf_link" class="button">Submit Assignment</a></p>
+<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfzWOLGeGBT8trx3xkOuYoUNKdoAcEuVYghNHSwQDspnpwv5g/viewform?usp=sf_link" target="_blank" class="button">Submit Assignment</a></p>
 
 That's it! You've completed your first programming project 🎉

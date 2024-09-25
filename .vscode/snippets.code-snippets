@@ -24,6 +24,17 @@
 			"</aside>"
 		]
 	},
+	"Slideshow Section": {
+		"scope": "astro",
+		"prefix": "ss",
+		"body": [
+			"<section class=\"notes\">",
+			"\t<section>",
+			"\t\t<h${2:3}>$1</h${2:3}>",
+			"\t</section>",
+			"</section>"
+		]
+	},
 	"Resource: Article": {
 		"scope": "json",
 		"prefix": "r:article",

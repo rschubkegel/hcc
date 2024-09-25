@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/Simple.astro"
-title: "Assignment: Hello, World!"
+title: "Assignment: Make a Quiz"
 ---
 
 ← [Course Homepage](/2024/fall/computer-science)
@@ -43,4 +43,4 @@ Here are some resources to learn about these new concepts:
 
 When you've finished, have a friend or family member try out the quiz! When you're happy with it, you can submit your assignment here:
 
-<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtJ1ThnHvtmuJXIHTh71-ozI0ViKHhVT9aUo2u_EOuPUwR_g/viewform?usp=sf_link" class="button">Submit Assignment</a></p>
+<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtJ1ThnHvtmuJXIHTh71-ozI0ViKHhVT9aUo2u_EOuPUwR_g/viewform?usp=sf_link" target="_blank" class="button">Submit Assignment</a></p>

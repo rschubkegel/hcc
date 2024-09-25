@@ -20,25 +20,4 @@ Your program must meet the following specifications:
 
 > A common technique in brute-force hacking is to create special "dictionary" of words and phrases that are specific to the person they are hacking. Lots of people choose a password they can remember that includes their birthday, their pet's name, the school they attend, etc. However, that is **very insecure** because that information is fairly easy to obtain through social media, conversations with friends, or public records.
 
-### Intro to Lists
-
-We will learn more about lists in the future, but for this assignment I will provide you with starter code to modify:
-
-```py
-# Creates a list (you must fill this out in your assignment)
-characters = ["a", "b", "c"]
-
-# ...
-
-# Prints "a" to the terminal
-print(characters[0])
-
-# Assigns the value "b" to the variable letter
-letter = characters[1]
-```
-
-### Submit
-
-As per usual, submit the assignment via Google Form:
-
-<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScUq9psuQYHLXGSEgLyhjx3ugsBQND-10Z3X56Nuwag86PyLw/viewform?usp=sf_link" class="button">Submit Assignment</a></p>
+<p style="text-align:center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScUq9psuQYHLXGSEgLyhjx3ugsBQND-10Z3X56Nuwag86PyLw/viewform?usp=sf_link" target="_blank" class="button">Submit Assignment</a></p>

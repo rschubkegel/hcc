@@ -1,6 +1,18 @@
 {
-  "topics": ["The Internet", "Functions", "Lists"],
+  "topics": ["The Internet", "Lists"],
   "resources": [
+    {
+      "title": "The Internet",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/the-internet",
+      "time": 30
+    },
+    {
+      "title": "Python Lists",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/python-lists",
+      "time": 80
+    },
     {
       "title": "What is the Internet?",
       "href": "https://youtu.be/Dxcc6ycZ73M?si=xAxFcJWZr-kCH13Y",
@@ -12,6 +24,12 @@
       "href": "https://youtu.be/ZhEf7e4kopM?si=cSM97bwhZdxZswK_",
       "type": "video",
       "time": 7
+    },
+    {
+      "title": "The Invention of the Internet",
+      "type": "article",
+      "href": "https://www.history.com/topics/inventions/invention-of-the-internet",
+      "time": 8
     },
     {
       "title": "Cybersecurity & Crime",
@@ -26,10 +44,28 @@
       "time": 5
     },
     {
-      "title": "Lorem Ipsum",
+      "title": "Python Lists",
+      "type": "article",
+      "href": "https://pythonbasics.org/list/",
+      "time": 5
+    },
+    {
+      "title": "Python Lists (reference)",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_lists.asp",
+      "time": 3
+    },
+    {
+      "title": "Project: Revised Quiz",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/quiz-revised",
+      "time": 30
+    },
+    {
+      "title": "Project: Password Generator",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/password-generator",
-      "time": 45
+      "time": 90
     }
   ]
 }

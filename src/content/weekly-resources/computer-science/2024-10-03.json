@@ -1,11 +1,4 @@
 {
-  "topics": ["Reading/Writing Files"],
-  "resources": [
-    {
-      "title": "Lorem Ipsum",
-      "type": "video",
-      "href": "https://www.youtube.com/watch?v=KN8YgJnShPM",
-      "time": 12
-    }
-  ]
+  "topics": ["Servers", "The Cloud", "Functions"],
+  "resources": []
 }
