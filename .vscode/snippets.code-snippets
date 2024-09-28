@@ -28,7 +28,7 @@
 		"scope": "astro",
 		"prefix": "ss",
 		"body": [
-			"<section class=\"notes\">",
+			"<section>",
 			"\t<section>",
 			"\t\t<h${2:3}>$1</h${2:3}>",
 			"\t</section>",
@@ -76,11 +76,11 @@
 		"prefix": "r:slides",
 		"body": [
 			"{",
-			"\t\"title\": \"${2:Lorem Ipsum}\",",
+			"\t\"title\": \"${1:Lorem Ipsum}\",",
 			"\t\"type\": \"slides\",",
-			"\t\"href\": \"$1\",",
-			"\t\"time\": 110",
-			"}${4:,}"
+			"\t\"href\": \"$2\",",
+			"\t\"time\": 30",
+			"}$0"
 		]
 	}
 }

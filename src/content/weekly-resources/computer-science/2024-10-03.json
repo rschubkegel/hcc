@@ -1,4 +1,17 @@
 {
   "topics": ["Servers", "The Cloud", "Functions"],
-  "resources": []
+  "resources": [
+    {
+      "title": "Servers",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/servers",
+      "time": 30
+    },
+    {
+      "title": "Python Functions",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/python-functions",
+      "time": 80
+    }
+  ]
 }
