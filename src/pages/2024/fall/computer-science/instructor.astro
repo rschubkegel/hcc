@@ -69,14 +69,16 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
         <table>
           <thead>
             <tr>
+              <th>Week</th>
               <th>Dates</th>
               <th>Time Estimate</th>
             </tr>
           </thead>
           <tbody>
             {
-              weeklyEstimates.map(({ date, minutes }) => (
+              weeklyEstimates.map(({ date, minutes }, i) => (
                 <tr>
+                  <td>{i + 1}</td>
                   <td>{formatWeekString(date)}</td>
                   <td>
                     {minutes >= 60 ? <span>{Math.floor(minutes / 60)} hr</span> : ''}
@@ -86,7 +88,7 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
               ))
             }
             <tr>
-              <td>Cumulative</td>
+              <td colspan="2">Cumulative</td>
               <td>{Math.floor(totalMinutes / 60)} hr {totalMinutes % 60} min</td>
             </tr>
           </tbody>

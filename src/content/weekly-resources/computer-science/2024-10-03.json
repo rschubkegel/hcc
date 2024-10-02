@@ -12,6 +12,42 @@
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/python-functions",
       "time": 80
+    },
+    {
+      "title": "Servers vs Desktops Explained",
+      "type": "video",
+      "href": "https://youtu.be/UjCDWCeHCzY?si=w_1CSpwvRPH1URZv",
+      "time": 7
+    },
+    {
+      "title": "What is The Cloud?",
+      "type": "article",
+      "href": "https://www.cloudflare.com/learning/cloud/what-is-the-cloud",
+      "time": 10
+    },
+    {
+      "title": "What is the Cloud?",
+      "type": "video",
+      "href": "https://youtu.be/i9x0UO8MY0g?si=uEUOJALFU22_97Aw",
+      "time": 3
+    },
+    {
+      "title": "Functions in Python",
+      "type": "video",
+      "href": "https://youtu.be/89cGQjB5R4M?si=Z3j7xKmYxAN0mRUF",
+      "time": 10
+    },
+    {
+      "title": "Quiz: Week 5",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSco5irBA8Mk0ljV8OEFwuZQviCuL95XTlVCADlbsyKax2HD5w/viewform?usp=sf_link",
+      "time": 20
+    },
+    {
+      "title": "Project: Tic Tac Toe pt. 1",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/tic-tac-toe-1",
+      "time": 120
     }
   ]
 }
