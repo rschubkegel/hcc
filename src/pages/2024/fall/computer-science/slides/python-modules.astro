@@ -1,0 +1,204 @@
+---
+import Slides from '@layouts/Slides.astro'
+const title = "Python Modules"
+---
+
+<Slides title={ title }>
+  <!-- OVERVIEW -->
+  <section>
+    <h2>{ title }</h2>
+    <blockquote style="font-size: .8em">Week 6</blockquote>
+    <!-- 10/10/2024 -->
+  </section>
+
+  <!-- REIVEW -->
+  <section>
+    <section>
+      <h3>Review</h3>
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG50MHRzend2b2E1ZzNzdDFjb3h1dzNrcXR4Y2dyeDhmdWhwMzRjbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.webp" height="400">
+    </section>
+
+    <section>
+      <h4>Anatomy of a Function</h4>
+      <pre class="fragment">
+        <code data-trim data-noescape data-line-numbers="1,2,3" class="language-python">
+          def add(num1, num2):
+            sum = num1 + num2
+            return sum
+          print( add(2, 3) )
+        </code>
+      </pre>
+      <aside class="notes">
+        <p>
+          What are the variables in the definition called? Parameters (or arguments).
+        </p>
+        <p>
+          Is the variable "sum" accessible outside the function? No.
+        </p>
+        <p>
+          What is it called when you use the function? "Calling the function."
+        </p>
+      </aside>
+    </section>
+  </section>
+
+  <!-- MODULES -->
+  <section>
+    <section>
+      <h3>Modules</h3>
+      <img src="https://i.giphy.com/SIMKP4dNU5znPHWSVZ.webp" height="400">
+    </section>
+
+    <section>
+      <h4>What is a module?</h4>
+      <blockquote class="fragment">A module is another Python file.</blockquote>
+      <aside class="notes">
+        <p>Typically, modules just define variables and functions.</p>
+        <p>We are doing something out of the ordinary to avoid paying for Replit.</p>
+      </aside>
+    </section>
+
+    <section>
+      <h4>Importing an Entire Module</h4>
+      <pre class="fragment">
+        <code data-trim data-noescape class="language-python">
+          import random
+
+          print( random.randint(1, 10) )
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>Using an Import Alias</h4>
+      <pre class="fragment">
+        <code data-trim data-noescape class="language-python">
+          import random as rand
+
+          print( rand.randint(1, 10) )
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>Importing Everything from a Module</h4>
+      <pre class="fragment">
+        <code data-trim data-noescape class="language-python">
+          from random import *
+
+          print( randint(1, 10) )
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>Importing Part of a Module</h4>
+      <pre class="fragment">
+        <code data-trim data-noescape class="language-python">
+          from random import random, randint
+
+          print( random() )
+          print( randint(1, 10) )
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>Using an Import Alias</h4>
+      <pre class="fragment">
+        <code data-trim data-noescape class="language-python">
+          from random import random as randfloat
+
+          print( randfloat() )
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>Best Practices</h4>
+      <ul>
+        <li class="fragment">Import before anything else</li>
+        <li class="fragment">Use namespaces</li>
+      </ul>
+    </section>
+  </section>
+
+  <!-- COMMON BUILT-IN MODULES -->
+  <section>
+    <section>
+      <h3>Common Built-In Modules</h3>
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2tyaGg4OWZtNnQzdWw0dm4wcHJ3czJuZTAzMWE1cTNpcWk2Y2x1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wzqCepiFLXVPujU74f/giphy.webp" height="400">
+    </section>
+
+    <section>
+      <h4>random</h4>
+      <pre>
+        <code data-trim data-noescape class="language-python">
+          import random
+
+          # 0.0 - 1.0
+          random.random()
+
+          # 1 - 10
+          random.randint(1, 10)
+
+          # "Nash" or "Kylan"
+          random.choice(['Nash', 'Kylan'])
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>math</h4>
+      <pre>
+        <code data-trim data-noescape class="language-python">
+          import math
+
+          # 3.141592653589793
+          math.pi
+
+          # 256.0
+          math.pow(2, 8)
+
+          # 4.0
+          math.sqrt(16)
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h4>datetime</h4>
+      <pre>
+        <code data-trim data-noescape class="language-python">
+          import datetime
+
+          now = datetime.datetime.now()
+
+          # 2024
+          now.year
+
+          # 10
+          now.month
+
+          # 10
+          now.day
+        </code>
+      </pre>
+    </section>
+  </section>
+
+  <!-- ACTIVITY -->
+  <section>
+    <h2 class="r-fit-text">Activity: Multiple Modules</h2>
+    <ul>
+      <li>Utilize at least 3 built-in modules</li>
+      <li>
+        Define and call least 1 function
+        <ul>
+          <li>Must have at least 1 parameter</li>
+        </ul>
+      </li>
+      <li>Get creative 🎨</li>
+    </ul>
+  </section>
+</Slides>

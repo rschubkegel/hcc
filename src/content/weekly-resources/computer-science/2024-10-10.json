@@ -1,6 +1,42 @@
 {
-  "topics": ["CS: Artificial Intelligence", "Python: Importing Modules"],
+  "topics": ["CS: Artificial Intelligence", "Python: Modules"],
   "resources": [
+    {
+      "title": "Artificial Intelligence",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/artificial-intelligence",
+      "time": 50
+    },
+    {
+      "title": "Python Modules",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/python-modules",
+      "time": 50
+    },
+    {
+      "title": "Machine Learning & Artificial Intelligence",
+      "type": "video",
+      "href": "https://youtu.be/z-EtmaFJieY?si=iFDu4OezTca8pGK8",
+      "time": 12
+    },
+    {
+      "title": "Python Modules",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_modules.asp",
+      "time": 5
+    },
+    {
+      "title": "What are Python Modules",
+      "type": "video",
+      "href": "https://youtu.be/XcfxkHrHTVE?si=qtq-tcs-V4RhTORg",
+      "time": 7
+    },
+    {
+      "title": "Quiz: Week 6",
+      "type": "assignment",
+      "href": "",
+      "time": 20
+    },
     {
       "title": "Project: Tic Tac Toe pt. 2",
       "type": "assignment",
