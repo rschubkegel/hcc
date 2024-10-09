@@ -22,7 +22,7 @@ Please note: <mark>this syllabus may be updated</mark> based on the needs of the
   - [Grading Rubric](#grading-rubric)
     - [Participation](#participation)
     - [Projects](#projects)
-    - [Quizes](#quizes)
+    - [Quizzes](#quizzes)
     - [Exams](#exams)
 - [Behavior Expectations](#behavior-expectations)
 
@@ -67,7 +67,7 @@ The first class period (Thursday, September 12th) will be in-person. The followi
 
 ## Required Materials
 
-Students will need access to a computer with internet access in order to access course materials, complete online quizes, and work on programming assignments. For in-person class time, Chromebooks will be available for students to use (but students can bring their own computer if they have one).
+Students will need access to a computer with internet access in order to access course materials, complete online quizzes, and work on programming assignments. For in-person class time, Chromebooks will be available for students to use (but students can bring their own computer if they have one).
 
 Students (or their parent) are required to sign up for a free account for the online development environment [Replit](https://replit.com/).
 
@@ -102,7 +102,7 @@ Student work will be evaluated on the following criteria:
 | -- | -- |
 | [Participation](#participation) | 20% |
 | [Projects](#projects) | 30% |
-| [Quizes](#quizes) | 30% |
+| [Quizzes](#quizzes) | 30% |
 | [Exams](#exams) | 20% |
 
 #### Participation
@@ -129,6 +129,8 @@ Student projects will be evaluated on the following criteria:
 | Subjective Elegance | 40% |
 | Timeliness | (see below) |
 
+##### Project Late Penalties
+
 Late projects will be penalized by subtracting 10% of the graded points for each day that has elapsed since the deadline. For example:
 
 <pre>
@@ -140,9 +142,45 @@ Late projects will be penalized by subtracting 10% of the graded points for each
 = 76% (final score)
 </pre>
 
-#### Quizes
+#### Quizzes
 
-There will be online quizes every week that evaluate non-cumulative knowledge retention.
+There will be online quizzes every week that evaluate non-cumulative knowledge retention.
+
+##### Corrections
+
+Students may re-submit a corrected quiz up to 1 week after it is initially due.
+
+<p class="notice">
+Since quiz corrections were not added until week 5, there will be a grace period through week 6.
+<br>
+<br>
+<strong>You may submit corrections for quizzes week 2-5 through <mark>10/16</mark>.</strong>
+After that, the normal corrections rules apply (can only submit up to 1 week after due date).
+</p>
+
+Corrected questions are worth 50% of their original score.
+
+Questions that were correct on the first attempt will retain their full score, regardless of whether they were answered incorrectly on the second attempt.
+
+For example:
+
+<pre>
+   80% (first attempt)
+
+  100% (second attempt)
+-  80% (ignore first attempt, which is worth full points)
+=  20% (corrections)
+*  50% (half points for corrections)
+=  10% (corrections adjustment)
+
+   80% (first attempt)
++  10% (corrections adjustment)
+=  90% (final quiz score)
+</pre>
+
+##### Quiz Late Penalties
+
+The [project late penalties](#project-late-penalties) apply to quizzes as well.
 
 #### Exams
 
