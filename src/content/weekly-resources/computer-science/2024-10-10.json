@@ -1,11 +1,11 @@
 {
-  "topics": ["Importing Modules", "Reading/Writing Files"],
+  "topics": ["CS: Artificial Intelligence", "Python: Importing Modules"],
   "resources": [
     {
-      "title": "Files & File Systems",
-      "type": "video",
-      "href": "https://www.youtube.com/watch?v=KN8YgJnShPM",
-      "time": 12
+      "title": "Project: Tic Tac Toe pt. 2",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/tic-tac-toe-2",
+      "time": 120
     }
   ]
 }

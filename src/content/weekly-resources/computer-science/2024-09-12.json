@@ -1,5 +1,5 @@
 {
-  "topics": ["Course Introduction", "What is a Computer", "Computer Languages", "Python Variables", "Python Conditions"],
+  "topics": ["Course Introduction", "CS: What is a Computer", "CS: Computer Languages", "Python: Variables", "Python: Conditions"],
   "resources": [
     {
       "title": "Week 2 Slide Deck",
