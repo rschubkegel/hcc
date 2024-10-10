@@ -22,7 +22,10 @@ Please note: <mark>this syllabus may be updated</mark> based on the needs of the
   - [Grading Rubric](#grading-rubric)
     - [Participation](#participation)
     - [Projects](#projects)
+      - [Project Late Penalties](#project-late-penalties)
     - [Quizzes](#quizzes)
+      - [Corrections](#corrections)
+      - [Quiz Late Penalties](#quiz-late-penalties)
     - [Exams](#exams)
 - [Behavior Expectations](#behavior-expectations)
 
