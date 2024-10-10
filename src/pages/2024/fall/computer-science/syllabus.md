@@ -24,10 +24,12 @@ Please note: <mark>this syllabus may be updated</mark> based on the needs of the
     - [Projects](#projects)
       - [Project Late Penalties](#project-late-penalties)
     - [Quizzes](#quizzes)
-      - [Corrections](#corrections)
       - [Quiz Late Penalties](#quiz-late-penalties)
+      - [Corrections](#corrections)
     - [Exams](#exams)
-- [Behavior Expectations](#behavior-expectations)
+- [Expectations](#expectations)
+  - [Behavior](#behavior)
+  - [Artificial Intelligence](#artificial-intelligence)
 
 ## Course Description
 
@@ -196,7 +198,9 @@ Questions that were correct on the first attempt will retain their full score, r
 
 There will be two in-person exams: one midterm and one final. Exams will evaluate cumulative knowledge retention.
 
-## Behavior Expectations
+## Expectations
+
+### Behavior
 
 Students are expected to exemplify the following characteristics:
 
@@ -209,3 +213,13 @@ Similarly, I will do my best to be respectful, attentive, and encouraging.
 <p class="notice">
 Students are encouraged to <em>take ownership of their own experience in this class</em>. In addition to completing assignments, students should proactively reach out for help when necessary and inquire about ways to expand projects beyond the minimum requirements. While this is an accredited course, <em>students will get out of the class what they put in</em>.
 </p>
+
+### Artificial Intelligence
+
+Artificial intelligence (AI) should not be used in this class unless explicitly stated otherwise.
+
+Using AI to assist with quiz quesions, write code, or otherwise behave disingenuously is subject to disciplinary action.
+
+Not only is it plagiaristic but it is detrimental to the learning process.
+
+There is a time and a place for AI, but that time and place is not this class.
