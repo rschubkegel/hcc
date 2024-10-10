@@ -134,24 +134,31 @@ Student projects will be evaluated on the following criteria:
 
 ##### Project Late Penalties
 
-Late projects will be penalized by subtracting 10% of the graded points for each day that has elapsed since the deadline. For example:
+Late projects will be penalized by subtracting 10% of the graded points for each day that has elapsed since the deadline.
 
+<details>
+<summary>Example Grading for Late Assignment</summary>
 <pre>
   60% (passes required functionality)
 + 35% (formatted well but solution is not idiomatic)
 = 95% (base score)
-
- -20% (2 days late)
+<br>
+- 20% (2 days late)
 = 76% (final score)
 </pre>
+</details>
 
 #### Quizzes
 
 There will be online quizzes every week that evaluate non-cumulative knowledge retention.
 
+##### Quiz Late Penalties
+
+Quizes are subject to the same [late penalties](#project-late-penalties) as projects.
+
 ##### Corrections
 
-Students may re-submit a corrected quiz up to 1 week after it is initially due.
+Students may re-submit a corrected quiz up to 1 week after its initial due date.
 
 <p class="notice">
 Since quiz corrections were not added until week 5, there will be a grace period through week 6.
@@ -165,25 +172,25 @@ Corrected questions are worth 50% of their original score.
 
 Questions that were correct on the first attempt will retain their full score, regardless of whether they were answered incorrectly on the second attempt.
 
-For example:
-
+<details>
+<summary>Example Grading for Quiz Corrections</summary>
 <pre>
-   80% (first attempt)
-
-  100% (second attempt)
--  80% (ignore first attempt, which is worth full points)
-=  20% (corrections)
-*  50% (half points for corrections)
-=  10% (corrections adjustment)
-
-   80% (first attempt)
-+  10% (corrections adjustment)
-=  90% (final quiz score)
+   80%  (first attempt)
+  100%  (corrected quiz)
+<br>
+  100%
+-  80%
+=  20%  (score improvement)
+<br>
+   20%
+*  50%
+=  10%  (corrections adjustment)
+<br>
+   80%  (first attempt)
++  10%  (additional score)
+=  90%  (final assignment score)
 </pre>
-
-##### Quiz Late Penalties
-
-The [project late penalties](#project-late-penalties) apply to quizzes as well.
+</details>
 
 #### Exams
 
