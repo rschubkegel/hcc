@@ -161,7 +161,7 @@ Quizes are subject to the same [late penalties](#project-late-penalties) as proj
 Students may re-submit a corrected quiz up to 1 week after its initial due date.
 
 <p class="notice">
-Since quiz corrections were not added until week 5, there will be a grace period through week 6.
+Since quiz corrections were not available until week 5, there will be a grace period through week 6.
 <br>
 <br>
 <strong>You may submit corrections for quizzes week 2-5 through <mark>10/16</mark>.</strong>
