@@ -6,6 +6,12 @@
       "type": "video",
       "href": "https://www.youtube.com/watch?v=KN8YgJnShPM",
       "time": 12
+    },
+    {
+      "title": "Project: Tic Tac Toe pt. 3",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/tic-tac-toe-3",
+      "time": 120
     }
   ]
 }
