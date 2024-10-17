@@ -7,7 +7,7 @@ title: "Assignment: Tic Tac Toe pt. 3"
 
 # Tic Tac Toe (part 3)
 
-<mark>Due 10/23 at 11:59</mark>
+<mark>Due 10/30 at 11:59</mark>
 
 In [part 1](/2024/fall/computer-science/assignments/tic-tac-toe-1) of this project, you created the functions necessary to print a game board. In [part 2](/2024/fall/computer-science/assignments/tic-tac-toe-2) you added the game state and player input. Now, it's time to add the final touch: winning! 👑
 
