@@ -1,12 +1,6 @@
 {
-  "topics": ["Reading/Writing Files"],
+  "topics": ["Midterm Review"],
   "resources": [
-    {
-      "title": "Files & File Systems",
-      "type": "video",
-      "href": "https://www.youtube.com/watch?v=KN8YgJnShPM",
-      "time": 12
-    },
     {
       "title": "Project: Tic Tac Toe pt. 3",
       "type": "assignment",

@@ -1,4 +1,11 @@
 {
-  "topics": [],
-  "resources": []
+  "topics": ["Reading/Writing Files"],
+  "resources": [
+    {
+      "title": "Files & File Systems",
+      "type": "video",
+      "href": "https://www.youtube.com/watch?v=KN8YgJnShPM",
+      "time": 12
+    }
+  ]
 }
