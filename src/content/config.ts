@@ -21,6 +21,13 @@ const resourcesSchema = z.array(
   ),
 );
 
+const slidesSchema = z.object({
+  /** Date of the class that the slides are created for. */
+  date: z.date(),
+  /** Title of the slideshow. */
+  title: z.string(),
+});
+
 const weeklyResourcesSchema = z.object({
   /** List of topics covered this week */
   topics: z.array(z.string()),
@@ -32,6 +39,10 @@ export const collections = {
   'resources': defineCollection({
     type: 'data',
     schema: resourcesSchema,
+  }),
+  'slides': defineCollection({
+    type: 'content',
+    schema: slidesSchema,
   }),
   'weekly-resources': defineCollection({
     type: 'data',

@@ -1,0 +1,57 @@
+---
+import Base from '@layouts/Base.astro';
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import { DateTime } from 'luxon';
+import 'reveal.js/dist/reveal.css';
+import 'reveal.js/dist/theme/black.css';
+import 'reveal.js/plugin/highlight/monokai.css';
+export const getStaticPaths = (async () => {
+  // Get all slides from src/content/slides/
+  let slides = await getCollection('slides');
+  // Limit slides to specified date range
+  const startDate = DateTime.fromISO('2024-09-04');
+  const endDate = DateTime.fromISO('2025-01-31');
+  slides = slides.filter(slide => {
+    const date = DateTime.fromJSDate(slide.data.date);
+    const afterStart = date.diff(startDate).milliseconds > 0;
+    const beforeEnd = date.diff(endDate).milliseconds < 0;
+    return afterStart && beforeEnd;
+  });
+  // Convert slide data to static path data
+  return slides.map(slide => ({
+      params: {
+        slug: slide.slug,
+      },
+      props: {
+        content: slide.body,
+        title: slide.data.title,
+      }
+    }));
+}) satisfies GetStaticPaths;
+const { props: { content, title } } = Astro;
+---
+
+<script>
+  // @ts-expect-error no declaration file
+  import Reveal from 'reveal.js'
+  // @ts-expect-error no declaration file
+  import RevealMarkdown from 'reveal.js/plugin/markdown/markdown'
+  // @ts-expect-error no declaration file
+  import RevealNotes from 'reveal.js/plugin/notes/notes'
+  // @ts-expect-error no declaration file
+  import RevealHighlight from 'reveal.js/plugin/highlight/highlight'
+  new Reveal().initialize({
+    plugins: [RevealMarkdown, RevealNotes, RevealHighlight],
+  })
+</script>
+
+<Base title={ title }>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown data-separator-vertical="--\n\n">
+        <textarea data-template>{ content }</textarea>
+      </section>
+    </div>
+  </div>
+</Base>
