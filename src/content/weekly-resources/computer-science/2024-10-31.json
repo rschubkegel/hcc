@@ -2,10 +2,28 @@
   "topics": ["Reading/Writing Files"],
   "resources": [
     {
+      "title": "Python - Reading/Writing Files",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/python-files",
+      "time": 110
+    },
+    {
       "title": "Files & File Systems",
       "type": "video",
       "href": "https://www.youtube.com/watch?v=KN8YgJnShPM",
       "time": 12
+    },
+    {
+      "title": "How to Read a File in Python",
+      "type": "article",
+      "href": "https://pythonspot.com/read-file/",
+      "time": 7
+    },
+    {
+      "title": "Python File Writing",
+      "type": "article",
+      "href": "https://pythonspot.com/write-file/",
+      "time": 3
     }
   ]
 }
