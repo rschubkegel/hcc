@@ -105,7 +105,9 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     element.addEventListener('click', () => {
       clicks += 1;
       if (clicks === 3) {
-        window.location.href += '/instructor';
+        let href = window.location.href;
+        if (href.at(-1) === '/') href = href.slice(0, -1);
+        window.location.href = href + '/instructor';
       }
     });
   }
