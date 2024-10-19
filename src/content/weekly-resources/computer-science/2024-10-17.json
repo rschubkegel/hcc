@@ -2,6 +2,12 @@
   "topics": ["Midterm Review"],
   "resources": [
     {
+      "title": "Quiz: Week 6 Corrections",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSdTUfRVEtpAt9kQCB4qQAi4KnAMj3XtgZvU4n7sVEe-x79b7A/viewform?usp=sf_link",
+      "time": 0
+    },
+    {
       "title": "Project: Tic Tac Toe pt. 3",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/tic-tac-toe-3",
