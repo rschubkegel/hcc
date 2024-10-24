@@ -15,24 +15,31 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Slideshow Speaker Notes": {
-		"scope": "astro",
-		"prefix": "aside:notes",
+	// "Slideshow Speaker Notes": {
+	// 	"scope": "astro",
+	// 	"prefix": "aside:notes",
+	// 	"body": [
+	// 		"<aside class=\"notes\">",
+	// 		"\t<p>$1</p>",
+	// 		"</aside>"
+	// 	]
+	// },
+	// "Slideshow Section": {
+	// 	"scope": "astro",
+	// 	"prefix": "ss",
+	// 	"body": [
+	// 		"<section>",
+	// 		"\t<section>",
+	// 		"\t\t<h${2:3}>$1</h${2:3}>",
+	// 		"\t</section>",
+	// 		"</section>"
+	// 	]
+	// },
+	"Slideshow Image": {
+		"scope": "markdown",
+		"prefix": "img",
 		"body": [
-			"<aside class=\"notes\">",
-			"\t<p>$1</p>",
-			"</aside>"
-		]
-	},
-	"Slideshow Section": {
-		"scope": "astro",
-		"prefix": "ss",
-		"body": [
-			"<section>",
-			"\t<section>",
-			"\t\t<h${2:3}>$1</h${2:3}>",
-			"\t</section>",
-			"</section>"
+			"![]($0) <!-- .element: style=\"height:400px\" -->"
 		]
 	},
 	"Resource: Article": {
@@ -78,6 +85,18 @@
 			"{",
 			"\t\"title\": \"${1:Lorem Ipsum}\",",
 			"\t\"type\": \"slides\",",
+			"\t\"href\": \"$2\",",
+			"\t\"time\": 30",
+			"}$0"
+		]
+	},
+	"Resource: Game": {
+		"scope": "json",
+		"prefix": "r:game",
+		"body": [
+			"{",
+			"\t\"title\": \"${1:Lorem Ipsum}\",",
+			"\t\"type\": \"game\",",
 			"\t\"href\": \"$2\",",
 			"\t\"time\": 30",
 			"}$0"

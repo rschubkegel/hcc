@@ -1,11 +1,23 @@
 {
-  "topics": ["Reading/Writing Files"],
+  "topics": ["CS: File Systems", "Python: Reading/Writing Files"],
   "resources": [
+    {
+      "title": "File Systems",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/file-systems",
+      "time": 30
+    },
     {
       "title": "Python - Reading/Writing Files",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/python-files",
-      "time": 110
+      "time": 80
+    },
+    {
+      "title": "Tour of File System Types",
+      "type": "article",
+      "href": "https://hivo.co/blog/a-tour-of-file-system-types-choosing-the-right-fit-for-your-needs",
+      "time": 15
     },
     {
       "title": "Files & File Systems",

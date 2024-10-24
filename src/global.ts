@@ -6,6 +6,7 @@ export const SYMBOLS: Record<InferEntrySchema<'weekly-resources'>['resources'][n
   'assignment': '📝',
   'slides': '🎞️',
   'video': '📽️',
+  'game': '🎮',
 };
 
 export const GATEKEEPER_PASSWORD = 'compscirocks';

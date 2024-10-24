@@ -6,6 +6,36 @@
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/tic-tac-toe-3",
       "time": 120
+    },
+    {
+      "title": "You're the OS!",
+      "type": "game",
+      "href": "https://plbrault.itch.io/youre-the-os",
+      "time": 20
+    },
+    {
+      "title": "Human Resource Machine",
+      "type": "game",
+      "href": "https://tomorrowcorporation.com/humanresourcemachine",
+      "time": 20
+    },
+    {
+      "title": "7 Billion Humans",
+      "type": "game",
+      "href": "https://tomorrowcorporation.com/7billionhumans",
+      "time": 20
+    },
+    {
+      "title": "Baba is You",
+      "type": "game",
+      "href": "https://www.hempuli.com/baba/",
+      "time": 20
+    },
+    {
+      "title": "while True: learn()",
+      "type": "game",
+      "href": "https://store.steampowered.com/app/619150/while_True_learn/",
+      "time": 20
     }
   ]
 }

@@ -6,7 +6,7 @@ const basicResourceSchema = z.object({
   /** URL of the resource */
   href: z.string().optional(),
   /** Type of resource */
-  type: z.enum(['slides', 'video', 'article', 'assignment']),
+  type: z.enum(['slides', 'video', 'article', 'assignment', 'game']),
   /** Time estimate (in minutes); used to estimate student effort */
   time: z.number(),
 });
