@@ -36,6 +36,12 @@
       "type": "game",
       "href": "https://store.steampowered.com/app/619150/while_True_learn/",
       "time": 25
+    },
+    {
+      "title": "Install Python Locally",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/local-python",
+      "time": 30
     }
   ]
 }
