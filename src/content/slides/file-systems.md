@@ -137,21 +137,49 @@ What about negative numbers? <!-- .element: class="fragment" -->
  127 # 01111111
 ```
 
+--
+
+### Floating Point Numbers
+
+_sign field_ | _exponent field_ | _significand field_
+
+```py
+  1 # 0 01111111 00000000000000000000000
+100 # 0 10000101 10010000000000000000000
+255 # 0 10000110 11111110000000000000000
+```
+
 ---
 
-## Text Files
+## Storing Files
 
 ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnVpbjFhcHJ6bjEwdWRpZ2J6bncyZm95NWFwNHdyczV0azE1dmdiZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aeqpymkqoW3BAiqboo/giphy.webp) <!-- .element: style="height:400px" -->
 
-<!-- TODO -->
+--
 
----
+### Text Files (.txt)
+
+![](/2024/fall/computer-science/images/text-file-hex.png)
+
+--
+
+### Image Files (.png)
+
+<!-- ![](https://media4.giphy.com/media/l3vRgqJIdbRp7Exfa/giphy.webp?cid=ecf05e47a34t62sv5yvah3uezolo0suywz2vy0mqbc0typyd&ep=v1_gifs_search&rid=giphy.webp&ct=g) -->
+
+![](/2024/fall/computer-science/images/image-file-hex.png) <!-- .element: style="height:400px" -->
+
+--
 
 ## Image Files
 
-![](https://media4.giphy.com/media/l3vRgqJIdbRp7Exfa/giphy.webp?cid=ecf05e47a34t62sv5yvah3uezolo0suywz2vy0mqbc0typyd&ep=v1_gifs_search&rid=giphy.webp&ct=g) <!-- .element: style="height:400px" -->
+![](https://www.ionos.com/digitalguide/fileadmin/_processed_/0/6/csm_what-is-a-pixel-the-arrangement-of-subpixels_3fe7466f5f.webp) <!-- .element: style="height:400px" -->
 
-<!-- TODO -->
+NOTES:
+- If all three primary colors have the maximum value of 255, white appears
+- The values in between allow around 16.7 million shades of color (2563) to be displayed
+
+<!-- https://www.ionos.com/digitalguide/websites/web-design/what-is-a-pixel/ -->
 
 ---
 
@@ -159,4 +187,87 @@ What about negative numbers? <!-- .element: class="fragment" -->
 
 ![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTViaWo3N2IxdWxsdTZjMTh5dXRrMXFpYzZhNXA0cTJ3dHJmd3FkeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SuEFqeWxlLcvm/giphy.webp) <!-- .element: style="height:400px" -->
 
-<!-- TODO -->
+NOTES: in a previous quiz, you were asked how you would organize a library. This is the difficult question behind file systems.
+
+--
+
+### Considerations
+
+- Performance
+- Integrity
+- Scalability
+- Compatibility
+- Security
+
+NOTES:
+- Faster w/large files or many small files?
+- Checksums or redundancy?
+- What happens when you add more storage?
+- Not all computers use the same
+- Encryption, permissions, etc.
+
+<!-- https://hivo.co/blog/a-tour-of-file-system-types-choosing-the-right-fit-for-your-needs -->
+
+--
+
+### Common Types
+
+- FAT (File Allocation Table)
+- NTFS (New Technology File System)
+- ext4 (Fourth Extended File System)
+- APFS (Apple File System)
+
+NOTES:
+- NTFS most common for Windows
+- APFS most common for macOS
+- ext4 most common for Linux
+
+--
+
+### Types of Files
+
+- File (data)
+- Directory (folder)
+
+--
+
+### Paths
+
+Windows: `C:\Users\Rylan`
+
+Unix: `/Users/Rylan`
+
+--
+
+### Fragmentation
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0QUvYwNaeFs%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=ca2485f480a020fb7204a36fee820836bdfcfb29145f5fe914a09d880f02a9c0&ipo=images) <!-- .element: style="height:400px" -->
+
+NOTES:
+- _Spatial_ (reference) locality is how close files are
+- Takes longer to get to your aunt's house than your friend's
+- Keep it closer to keep it fast
+- Defragmentation re-organizes to keep common stuff close
+- Other options include _temperal_ locality
+
+--
+
+### Review
+
+Are all file systems the same? _No!_ <!-- .element: class="fragment" -->
+<!-- .element: class="fragment" -->
+
+What are some considerations when picking a file system? _Performance, integrity, scalability, compatibility, security._ <!-- .element: class="fragment" -->
+<!-- .element: class="fragment" -->
+
+What is a file path? _All folders plus the file name._ <!-- .element: class="fragment" -->
+<!-- .element: class="fragment" -->
+
+What is fragmentation and why is it bad? _Separation of files, slows down R/W operations._ <!-- .element: class="fragment" -->
+<!-- .element: class="fragment" -->
+
+---
+
+## Now for Some Coding... <!-- .element: class="r-fit-text" -->
+
+[Python: Reading/Writing Files](/2024/fall/computer-science/slides/python-files)
