@@ -77,7 +77,7 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
   <table>
     <thead>
       <tr>
-        <th>Dates</th>
+        <th>Week</th>
         <th>Topic(s)</th>
         <th>Resources</th>
       </tr>
@@ -86,7 +86,14 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
       {
         weeklyResources.map(({ id, data }, index) => (
           <tr style={`display: ${assignedBeforeNow(id.slice(-10)) ? 'table-row' : 'none'};`}>
-            <td>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</td>
+            <td>
+              <div>
+                <strong>Week {index + 1}</strong>
+              </div>
+              <div>
+                <em>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</em>
+              </div>
+            </td>
             <td>
               <ul>
                 {

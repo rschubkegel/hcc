@@ -4,11 +4,11 @@ import { getCollection } from 'astro:content';
 import { formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 import Gatekeeper from '@components/ShowForInstructor.tsx';
 const weeklyResources = (await getCollection('weekly-resources', ({ id }) => /computer-science/.test(id)));
-const weeklyEstimates = weeklyResources.map(({ data, id }) => ({
-  date: id.slice(-10),
-  minutes: data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0),
+const resourcesWithCumulativeMinutes = weeklyResources.map(resource => ({
+  ...resource,
+  minutes: resource.data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0),
 }));
-const totalMinutes = weeklyEstimates.reduce((a, b) => a + b.minutes, 0);
+const totalMinutes = resourcesWithCumulativeMinutes.reduce((a, b) => a + b.minutes, 0);
 const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resources'][0]) => {
   // all slides opened in new tab
   if (resource.type === 'slides') return '_blank';
@@ -30,16 +30,27 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
         <table>
           <thead>
             <tr>
-              <th>Dates</th>
+              <th>Week</th>
               <th>Topic(s)</th>
               <th>Resources</th>
             </tr>
           </thead>
           <tbody>
             {
-              weeklyResources.map(({ id, data }, index) => (
+              resourcesWithCumulativeMinutes.map(({ id, data, minutes }, index) => (
                 <tr>
-                  <td>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</td>
+                  <td>
+                    <div>
+                      <strong>Week {index + 1}</strong>
+                    </div>
+                    <div>
+                      <em>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</em>
+                    </div>
+                    <div style="text-align:center;background:#8888;border-radius:2px;padding:0 4px;">
+                      {minutes >= 60 ? <span>{Math.floor(minutes / 60)} hr</span> : ''}
+                      <span>{minutes % 60} min</span>
+                    </div>
+                  </td>
                   <td>
                     <ul>
                       {
@@ -63,33 +74,12 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
                 </tr>
               ))
             }
-          </tbody>
-        </table>
-        <h2>Time Estimates</h2>
-        <table>
-          <thead>
             <tr>
-              <th>Week</th>
-              <th>Dates</th>
-              <th>Time Estimate</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              weeklyEstimates.map(({ date, minutes }, i) => (
-                <tr>
-                  <td>{i + 1}</td>
-                  <td>{formatWeekString(date)}</td>
-                  <td>
-                    {minutes >= 60 ? <span>{Math.floor(minutes / 60)} hr</span> : ''}
-                    <span>{minutes % 60} min</span>
-                  </td>
-                </tr>
-              ))
-            }
-            <tr>
-              <td colspan="2">Cumulative</td>
-              <td>{Math.floor(totalMinutes / 60)} hr {totalMinutes % 60} min</td>
+              <td>
+                <strong>Cumulative</strong>
+              </td>
+              <td>N/A</td>
+              <td>{Math.floor(totalMinutes / 60)} hr {Math.floor(totalMinutes % 60)} min</td>
             </tr>
           </tbody>
         </table>
