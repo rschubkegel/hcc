@@ -1,10 +1,10 @@
 {
-  "topics": ["CS: Applications"],
+  "topics": ["CS: Databases", "Python - Pandas Module"],
   "resources": [
     {
-      "title": "Applications",
+      "title": "Databases",
       "type": "slides",
-      "href": "/2024/fall/computer-science/slides/applications",
+      "href": "/2024/fall/computer-science/slides/databases",
       "time": 30
     },
     {
