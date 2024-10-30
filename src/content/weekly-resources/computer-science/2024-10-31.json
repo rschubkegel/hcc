@@ -38,10 +38,28 @@
       "time": 3
     },
     {
+      "title": "Python read a file",
+      "type": "video",
+      "href": "https://youtu.be/LpZmZs2_BC4?si=BzXTVTT16_y6klK1",
+      "time": 4
+    },
+    {
+      "title": "Python write a file",
+      "type": "video",
+      "href": "https://www.youtube.com/watch?v=GJ5LJnIEEYo",
+      "time": 3
+    },
+    {
       "title": "Quiz: Week 9",
       "type": "assignment",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSerrll0qGmm-DTBbCAVltIq3kCIbV0G9SoOT6ATK4m8Y7xcpA/viewform?usp=sf_link",
       "time": 15
+    },
+    {
+      "title": "Project: Dice Rolling Simulator",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/dice-roll-sim",
+      "time": 120
     }
   ]
 }

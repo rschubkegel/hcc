@@ -178,7 +178,7 @@ groceries = None
 # With pickle
 import pickle
 with open("data.pickle", "rb") as file:
-    groceries = pickle.load(groceries, file)
+    groceries = pickle.load(file)
 
 # With json
 import json
