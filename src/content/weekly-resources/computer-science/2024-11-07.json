@@ -1,4 +1,11 @@
 {
-  "topics": [],
-  "resources": []
+  "topics": ["CS: Applications"],
+  "resources": [
+    {
+      "title": "Applications",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/applications",
+      "time": 30
+    }
+  ]
 }
