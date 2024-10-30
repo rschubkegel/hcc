@@ -11,7 +11,7 @@ Week 10
 
 ## Review
 
-<!-- TODO -->
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBwZGN3cTZpMWt3czd2NDN6ejVsb2Q3enhieGp1bGJ6cGk1OWppYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/n4A8i9oVJDIOY/200.webp) <!-- .element: style="height:400px" -->
 
 --
 
@@ -41,7 +41,9 @@ All folders plus a file name. <!-- .element: class="fragment" -->
 
 ---
 
-## Common File Types
+## Common File Extensions
+
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmlmMXJkZDA5a21sMW50bHc1aHF1Z3Q1OTEwMm5mamltYmh6MjJyZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XcLNPfMKBaCpsD3MoA/200.webp) <!-- .element: style="height:400px" -->
 
 --
 
@@ -96,7 +98,7 @@ All folders plus a file name. <!-- .element: class="fragment" -->
 
 ## Applications
 
-<!-- TODO -->
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWFyd2J0ZTF2M2kyczE1Y2E4dnR4ZjF6dHU2bGR4Mmd1ZmFtbGd3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mAIFDNLtw7HV2N4mhZ/giphy.webp) <!-- .element: style="height:400px" -->
 
 --
 
@@ -111,10 +113,8 @@ All folders plus a file name. <!-- .element: class="fragment" -->
 ### Program Files (Windows)
 
 - `C:\Program Files`
-- `C:\Program Files (x86)` <!-- .element: class="fragment" -->
-
+- `C:\Program Files (x86)`
 - `C:\Users\Rylan`
-<!-- .element: class="fragment" -->
 
 NOTES:
 - 64-bit applications
@@ -133,7 +133,7 @@ NOTES:
 
 No!\* <!-- .element: class="fragment" -->
 
-\*Windows is good about not running _just anything_
+\*Hidden files, extension association, security...
 <!-- .element: class="fragment" -->
 
 NOTES:
@@ -144,16 +144,49 @@ NOTES:
 
 ## Web Apps
 
-<!-- TODO -->
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHkwa2dvb21paHN1aHJibzZ2MzlmbGJjcmRxenB4ampiamNhamdjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0Gqn9yuw8hnPGn5K/giphy.webp) <!-- .element: style="height:400px" -->
+
+--
+
+### What is a Web App?
+
+An **application** that runs on **website**.
+<!-- .element: class="fragment" -->
+
+--
+
+### Where Are They Installed?
+
+In the cloud (not your computer)
+<!-- .element: class="fragment" -->
+
+NOTES:
+- Requires a _browser_
+- Requires an _internet connection_\*
+
+--
+
+### Examples
+
+- Gmail <!-- .element: class="fragment" -->
+- ThinkWave <!-- .element: class="fragment" -->
+
+NOTES:
+- Single-page applications (SPA's) do not refresh browser page while operating
+- Multi-page applications (MPA's) do
 
 ---
 
 ## Review
 
-<!-- TODO -->
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWQycjg1aTdtaGtsOGs4am00ZWIwZmpkcmhlNGY5MzI0eG41eTU2biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3H4YmeYZ6sx3rbvO9r/100.webp) <!-- .element: style="height:400px" -->
+
+--
+
+### What is a File Extension?
 
 ---
 
 ## Now for Some Coding... <!-- .element: class="r-fit-text" -->
 
-<!-- TODO -->
+[Python: Pandas Module](/2024/fall/computer-science/slides/python-pandas)
