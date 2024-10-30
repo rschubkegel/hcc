@@ -96,6 +96,39 @@ file.close()
 
 <!-- TODO -->
 
+--
+
+### What is Tabular Data?
+
+> Refers to data that is organized in a table with rows and columns <sup>[<a href="https://www.statology.org/tabular-data/">1</a>]</sup>
+
+--
+
+### Why is it Useful?
+
+- Organization <!-- .element: class="fragment" -->
+- Data analysis <!-- .element: class="fragment" -->
+- Scalability <!-- .element: class="fragment" -->
+
+--
+
+### Where Have You Seen It?
+
+- Google Sheets <!-- .element: class="fragment" -->
+- Microsoft Excel <!-- .element: class="fragment" -->
+
+--
+
+### Databases
+
+- Databases are special programs that store _massive_ amounts of data
+- Databases _structure data_ just like tabular data
+- Databases do not store all the data in a single file
+
+NOTE:
+This is how data is stored for large-scale, professional apps.
+They often allow data to be _related_ for performance and analysis.
+
 ---
 
 ## Pandas Module
