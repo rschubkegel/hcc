@@ -14,6 +14,12 @@
       "time": 80
     },
     {
+      "title": "Week 9 Lecture",
+      "type": "video",
+      "href": "https://drive.google.com/file/d/1jYroV4IQ_EigtMxXKDfJsJPR35sVDZys/view?usp=drive_link",
+      "time": 5
+    },
+    {
       "title": "Tour of File System Types",
       "type": "article",
       "href": "https://hivo.co/blog/a-tour-of-file-system-types-choosing-the-right-fit-for-your-needs",
