@@ -3,7 +3,7 @@ title: 'CS - File Systems'
 date: 2024-10-31
 ---
 
-# Reading & Writing Files <!-- .element: class="r-fit-text" -->
+# File Systems <!-- .element: class="r-fit-text" -->
 
 Week 9
 
