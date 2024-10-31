@@ -12,6 +12,12 @@
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/python-pandas",
       "time": 80
+    },
+    {
+      "title": "Intro to Databases",
+      "type": "video",
+      "href": "https://youtu.be/Zc14ZkWVhhs?si=Yf-pZ7l9hpJIAHw2",
+      "time": 6
     }
   ]
 }
