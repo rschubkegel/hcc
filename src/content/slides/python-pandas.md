@@ -33,6 +33,62 @@ from module_name import something as something_alias
 
 ---
 
+## Review: Functions
+
+<!-- TODO -->
+
+--
+
+### How Do You Call a Function?
+
+```py
+print()
+print("Hello, World!")
+print("Hello, World!", end="")
+```
+<!-- .element: class="fragment" -->
+
+--
+
+### How Do You Define a Function?
+
+```py
+def add_numbers(num1, num2):
+  result = num1 + num2
+  return result
+```
+<!-- .element: class="fragment" -->
+
+--
+
+### Is This Valid Python?
+
+```py
+print("Calling pring")
+print_variable = print
+print_variable("Calling print_variable")
+```
+
+Yes! <!-- .element: class="fragment" -->
+
+NOTES:
+- `print_variable` stores a reference to `print` function
+- `print_variable` is now callable!
+
+--
+
+### Is This Valid Python?
+
+```py
+say_hello()
+def say_hello():
+  print("Hello, World!")
+```
+
+No! <!-- .element: class="fragment" -->
+
+---
+
 ## Review: Files
 
 <!-- TODO -->
@@ -89,6 +145,29 @@ file.close()
 'ab' # append binary
 ```
 <!-- .element: class="fragment" -->
+
+--
+
+### What Happens When You Open a File That Doesn't Exist?
+
+In read mode (`'r'`) Python throws an error.
+<!-- .element: class="fragment" -->
+
+In write/append mode (`'w'`/`'a'`) the file is created.
+<!-- .element: class="fragment" -->
+
+--
+
+### How to Avoid File DNE Error?
+
+```py
+import os
+if os.path.exists("my_file.txt"):
+  # TODO use file
+```
+<!-- .element: class="fragment" -->
+
+NOTE: `try`/`catch` is another way
 
 ---
 

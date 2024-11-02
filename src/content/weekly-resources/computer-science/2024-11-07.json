@@ -1,23 +1,17 @@
 {
-  "topics": ["CS: Databases", "Python - Pandas Module"],
+  "topics": ["CS: Special Files", "Python - More Files"],
   "resources": [
     {
-      "title": "Databases",
+      "title": "Special Files",
       "type": "slides",
-      "href": "/2024/fall/computer-science/slides/databases",
-      "time": 30
+      "href": "/2024/fall/computer-science/slides/special-files",
+      "time": 20
     },
     {
-      "title": "Python - Pandas Module",
+      "title": "Python - More Files",
       "type": "slides",
-      "href": "/2024/fall/computer-science/slides/python-pandas",
-      "time": 80
-    },
-    {
-      "title": "Intro to Databases",
-      "type": "video",
-      "href": "https://youtu.be/Zc14ZkWVhhs?si=Yf-pZ7l9hpJIAHw2",
-      "time": 6
+      "href": "/2024/fall/computer-science/slides/python-more-files",
+      "time": 90
     },
     {
       "title": "Topic Survey",

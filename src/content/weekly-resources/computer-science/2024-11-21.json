@@ -1,4 +1,17 @@
 {
-  "topics": ["HTTP", "APIs"],
-  "resources": []
+  "topics": ["CS: Error Handling", "Python - try/except"],
+  "resources": [
+    {
+      "title": "Python Try Except",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_try_except.asp",
+      "time": 15
+    },
+    {
+      "title": "The horrors of software bugs",
+      "type": "video",
+      "href": "https://youtu.be/Iq_r7IcNmUk?si=erfwjCBf2iZAiiiq",
+      "time": 17
+    }
+  ]
 }
