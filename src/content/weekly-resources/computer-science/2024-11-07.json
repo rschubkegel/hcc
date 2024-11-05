@@ -8,15 +8,21 @@
       "time": 20
     },
     {
-      "title": "Python - More Files",
+      "title": "Python - More on Files",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/python-more-files",
       "time": 90
     },
     {
-      "title": "Understanding directories folders and files",
+      "title": "Understanding folders and files",
       "type": "video",
       "href": "https://youtu.be/JlwobCSFRBU?si=rdUa3Eg7I9roQEnk",
+      "time": 5
+    },
+    {
+      "title": "Absolute vs Relative Paths",
+      "type": "video",
+      "href": "https://youtu.be/YammX3US7u4?si=fb7vsGI1HA8eMbcV",
       "time": 5
     },
     {
@@ -26,7 +32,7 @@
       "time": 10
     },
     {
-      "title": "What Are Hiberfil.sys, Swapfile.sys, and Pagefile.sys",
+      "title": "What Are .sys Files",
       "type": "video",
       "href": "https://youtu.be/v7odrCEKeQM?si=RVchut8rRdb26Nhk",
       "time": 10
@@ -36,6 +42,24 @@
       "type": "assignment",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSePaZjKp-fHCVANSmOPPqUaUw3n26ixybArRRtDIyw70Hqfaw/viewform?usp=sf_link",
       "time": 10
+    },
+    {
+      "title": "Quiz: Week 9 Corrections",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSctn6fpPEf3MTFhWUFNJkutNMxEjxPAlyQV2Ptow0HQ7RYm7Q/viewform?usp=sf_link",
+      "time": 15
+    },
+    {
+      "title": "Quiz: Week 10",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSd3oDNl2oFHEs6jrQVHmD5n7xHFJx84qAvENo7rklex1oP-3w/viewform?usp=sf_link",
+      "time": 10
+    },
+    {
+      "title": "Project: Guess the Number - High Scores",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/guess-the-number-hs",
+      "time": 180
     }
   ]
 }
