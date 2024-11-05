@@ -222,7 +222,6 @@ No! <!-- .element: class="fragment" -->
 instructor = course["instructor"] # 👈🏻 preferred syntax
 title = course.get("title")
 ```
-Any! <!-- .element: class="fragment" -->
 
 --
 

@@ -22,7 +22,7 @@
     {
       "title": "Python - Dictionaries",
       "type": "slides",
-      "href": "/2024/fall/computer-science/slides/dictionaries",
+      "href": "/2024/fall/computer-science/slides/python-dictionaries",
       "time": 90
     },
     {
@@ -42,6 +42,12 @@
       "type": "article",
       "href": "https://www.w3schools.com/python/python_dictionaries_access.asp",
       "time": 10
+    },
+    {
+      "title": "Quiz: Week 11",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLScs516NdIVZGDc3QiMG8ZRSTI-7WhKFAC0EoLEX8N28XoYdvQ/viewform?usp=sf_link",
+      "time": 20
     }
   ]
 }
