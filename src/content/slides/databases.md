@@ -1,11 +1,11 @@
 ---
 title: 'CS - Databases'
-date: 2024-11-07
+date: 2024-11-14
 ---
 
 # Databases <!-- .element: class="r-fit-text" -->
 
-Week 10
+Week 11
 
 ---
 
@@ -142,4 +142,4 @@ No\*, it uses databases. <!-- .element: class="fragment" -->
 
 ## Now for Some Coding... <!-- .element: class="r-fit-text" -->
 
-[Python: Pandas Module](/2024/fall/computer-science/slides/python-pandas)
+[Python: Dictionaries](/2024/fall/computer-science/slides/python-dictionaries)

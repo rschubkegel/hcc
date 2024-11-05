@@ -1,71 +1,15 @@
 ---
 title: 'Python - Dictionaries'
-date: 2024-11-02
+date: 2024-11-14
 ---
 
 # Python Dictionaries <!-- .element: class="r-fit-text" -->
 
-Week 10
+Week 11
 
 ---
 
-## Review: Functions
-
-![](https://media2.giphy.com/media/9tLjK1Ro0E2dzGgxlN/200.webp?cid=790b7611cluq55uamjzvz6u9d9oez7wol5cjpcof0hrg3hfz&ep=v1_gifs_search&rid=200.webp&ct=g) <!-- .element: style="height:400px" -->
-
---
-
-### How Do You Call a Function?
-
-```py
-print()
-print("Hello, World!")
-print("Hello, World!", end="")
-```
-<!-- .element: class="fragment" -->
-
---
-
-### How Do You Define a Function?
-
-```py
-def add_numbers(num1, num2):
-  result = num1 + num2
-  return result
-```
-<!-- .element: class="fragment" -->
-
---
-
-### Is This Valid Python?
-
-```py
-print("Calling pring")
-print_variable = print
-print_variable("Calling print_variable")
-```
-
-Yes! <!-- .element: class="fragment" -->
-
-NOTES:
-- `print_variable` stores a reference to `print` function
-- `print_variable` is now callable!
-
---
-
-### Is This Valid Python?
-
-```py
-say_hello()
-def say_hello():
-  print("Hello, World!")
-```
-
-No! <!-- .element: class="fragment" -->
-
----
-
-## Review: Files
+## Review
 
 ![](https://media0.giphy.com/media/l2SpKBAxpCCLuUGU8/200.webp?cid=790b7611qlbo7zxkjcytskr00vqgq2fu0wb7ko2iy59wkqyb&ep=v1_gifs_search&rid=200.webp&ct=g) <!-- .element: style="height:400px" -->
 
@@ -79,32 +23,11 @@ No! <!-- .element: class="fragment" -->
 
 --
 
-### Name the 3 Steps to Write a File
-
-1. Open <!-- .element: class="fragment" -->
-2. Write <!-- .element: class="fragment" -->
-3. Close <!-- .element: class="fragment" -->
-
---
-
 ### How to Auto-close a File?
 
 ```py
 with open('notes.txt', 'r') as file:
   content = file.read()
-```
-<!-- .element: class="fragment" -->
-
---
-
-### What Are File "Modes?"
-
-Tells the OS how you will use the file. <!-- .element: class="fragment" -->
-
-```py
-file = open('notes.txt', 'r')
-print( file.read() )
-file.close()
 ```
 <!-- .element: class="fragment" -->
 
@@ -124,26 +47,45 @@ file.close()
 
 --
 
-### What Happens When You Open a File That Doesn't Exist?
+### What is the Current Working Directory?
 
-In read mode (`'r'`) Python throws an error.
+The folder where Python was run.
 <!-- .element: class="fragment" -->
 
-In write/append mode (`'w'`/`'a'`) the file is created.
+NOTE: Or the folder where terminal is running.
+
+--
+
+### What is the Difference Between an **Absolute** Path and a **Relative** Path?
+
+Relative paths resolve to different locations based on the CWD, but absolute paths always resolve to same location.
 <!-- .element: class="fragment" -->
 
 --
 
-### How to Avoid File DNE Error?
+### Relative Paths
 
 ```py
-import os
-if os.path.exists("my_file.txt"):
-  # TODO use file
+# /
+# ├─ main.py
+# └─ files/
+#   └─ notes.txt
+```
+
+What is the path of `notes.txt` relative to `/` directory?
+
+```
+"files/notes.txt"
 ```
 <!-- .element: class="fragment" -->
 
-NOTE: `try`/`catch` is another way
+What is the path of `main.py` relative to `files/` directory?
+<!-- .element: class="fragment" -->
+
+```
+"../main.py"
+```
+<!-- .element: class="fragment" -->
 
 ---
 
@@ -166,7 +108,7 @@ course = {
 
 NOTES:
 - Stores key/value pairs
-- Sometimes called an "associative array" or a "map"
+- Sometimes called an "associative array" or a "hash map"
 
 --
 
@@ -292,4 +234,20 @@ Any! <!-- .element: class="fragment" -->
 
 ## Exercise
 
-<!-- TODO -->
+- Create a dictionary of 2+ "commands"
+  - Keys are a word the user must type, e.g. `greet`
+  - Values are descriptions of the action
+- Use a loop to print all commands & instructions
+- Get command from user and perform relevant action
+
+--
+
+## Additional Challenge: Command Aliases
+
+- Make the values of command dictionary _other dictionaries_
+- 2nd level dictionary should have these keys:
+  - `description`
+  - `alias`
+- When asking user for command, allow an alias to perform the same action
+
+Example: `greet` and `g` would do the same thing

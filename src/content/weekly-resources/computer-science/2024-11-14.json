@@ -5,19 +5,43 @@
       "title": "Databases",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/databases",
-      "time": 30
-    },
-    {
-      "title": "Python - Dictionaries",
-      "type": "slides",
-      "href": "/2024/fall/computer-science/slides/dictionaries",
-      "time": 80
+      "time": 20
     },
     {
       "title": "Intro to Databases",
       "type": "video",
       "href": "https://youtu.be/Zc14ZkWVhhs?si=Yf-pZ7l9hpJIAHw2",
       "time": 6
+    },
+    {
+      "title": "What is a Databases",
+      "type": "article",
+      "href": "https://www.fivetran.com/blog/what-is-a-database",
+      "time": 20
+    },
+    {
+      "title": "Python - Dictionaries",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/dictionaries",
+      "time": 90
+    },
+    {
+      "title": "Python Dictionaries",
+      "type": "video",
+      "href": "https://youtu.be/daefaLgNkw0?si=7tsxlDXL7kpCnk8T",
+      "time": 10
+    },
+    {
+      "title": "Python Dictionaries",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_dictionaries.asp",
+      "time": 10
+    },
+    {
+      "title": "Access Dictionary Items",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_dictionaries_access.asp",
+      "time": 10
     }
   ]
 }
