@@ -1,4 +1,11 @@
 {
   "topics": ["User Interfaces: Widgets"],
-  "resources": []
+  "resources": [
+    {
+      "title": "The Windows GUI",
+      "type": "video",
+      "href": "https://youtu.be/XpX2WuqzI0Y?si=VDerYW6ChRu9WBG6",
+      "time": 7
+    }
+  ]
 }

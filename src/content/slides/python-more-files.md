@@ -1,6 +1,6 @@
 ---
-title: 'Python - More Files'
-date: 2024-11-02
+title: 'Python - More on Files'
+date: 2024-11-07
 ---
 
 # Python - More on Files <!-- .element: class="r-fit-text" -->
@@ -46,6 +46,8 @@ def say_hello():
 ```
 
 No! <!-- .element: class="fragment" -->
+
+NOTE: `say_hello` must be defined before it can be called
 
 --
 

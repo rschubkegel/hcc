@@ -14,6 +14,24 @@
       "time": 90
     },
     {
+      "title": "Understanding directories folders and files",
+      "type": "video",
+      "href": "https://youtu.be/JlwobCSFRBU?si=rdUa3Eg7I9roQEnk",
+      "time": 5
+    },
+    {
+      "title": "File Paths",
+      "type": "article",
+      "href": "https://www.codecademy.com/resources/docs/general/file-paths",
+      "time": 10
+    },
+    {
+      "title": "What Are Hiberfil.sys, Swapfile.sys, and Pagefile.sys",
+      "type": "video",
+      "href": "https://youtu.be/v7odrCEKeQM?si=RVchut8rRdb26Nhk",
+      "time": 10
+    },
+    {
       "title": "Topic Survey",
       "type": "assignment",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSePaZjKp-fHCVANSmOPPqUaUw3n26ixybArRRtDIyw70Hqfaw/viewform?usp=sf_link",
