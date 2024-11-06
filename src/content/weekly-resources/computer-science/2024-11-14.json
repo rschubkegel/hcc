@@ -48,6 +48,12 @@
       "type": "assignment",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLScs516NdIVZGDc3QiMG8ZRSTI-7WhKFAC0EoLEX8N28XoYdvQ/viewform?usp=sf_link",
       "time": 20
+    },
+    {
+      "title": "Project: CYOA Story Game",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/cyoa",
+      "time": 120
     }
   ]
 }

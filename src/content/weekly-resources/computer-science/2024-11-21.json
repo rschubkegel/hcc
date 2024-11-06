@@ -12,6 +12,12 @@
       "type": "video",
       "href": "https://youtu.be/Iq_r7IcNmUk?si=erfwjCBf2iZAiiiq",
       "time": 17
+    },
+    {
+      "title": "Project: CYOA Story Game",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/cyoa",
+      "time": 120
     }
   ]
 }
