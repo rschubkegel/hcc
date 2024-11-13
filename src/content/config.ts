@@ -1,5 +1,16 @@
 import { z, defineCollection } from 'astro:content';
 
+const assignmentsSchema = z.object({
+  /** Date the assignment is due. If `undefined`, assignment does not need to be turned in. */
+  endDate: z.date().optional(),
+  /** Name of the assignment (used in h1). */
+  name: z.string(),
+  /** Date the assignment begins. */
+  startDate: z.date(),
+  /** Assignment title (used in webpage title). */
+  title: z.string().optional(),
+});
+
 const basicResourceSchema = z.object({
   /** Title of the resource */
   title: z.string(),
@@ -36,6 +47,10 @@ const weeklyResourcesSchema = z.object({
 });
 
 export const collections = {
+  'assignments': defineCollection({
+    type: 'content',
+    schema: assignmentsSchema,
+  }),
   'resources': defineCollection({
     type: 'data',
     schema: resourcesSchema,

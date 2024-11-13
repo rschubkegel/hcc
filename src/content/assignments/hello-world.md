@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Hello, World!"
+name: Hello, World!
+startDate: 2024-09-12
+dueDate: 2024-09-18
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Hello, World!
-
-<mark>Due 09/18 at 11:59</mark>
 
 A classic first program to test that your toolchain (runtime environment, compiler, <abbr title="integrated development environment">IDE</abbr>, etc.) is set up properly is the "Hello, World!" program.
 
@@ -21,7 +16,7 @@ An integrated development environment (IDE) is a program that provides text edit
 
 Visit [www.jdoodle.com](https://www.jdoodle.com/) and set up an account. I recommend using your student Gmail account so you don't have to remember another password.
 
-![](./landing-login.png)
+![](/2024/fall/computer-science/images/hello-world/landing-login.png)
 
 ### 2. Create a New Python Project
 
@@ -29,7 +24,7 @@ There are several ways to create a new project, a few examples are shown below.
 
 <figure>
 
-![](./landing-lets-code.png)
+![](/2024/fall/computer-science/images/hello-world/landing-lets-code.png)
 
 <figcaption>From the landing page</figcaption>
 
@@ -37,7 +32,7 @@ There are several ways to create a new project, a few examples are shown below.
 
 <figure>
 
-![](./profile-my-projects.png)
+![](/2024/fall/computer-science/images/hello-world/profile-my-projects.png)
 
 <figcaption>From dashboard</figcaption>
 
@@ -45,7 +40,7 @@ There are several ways to create a new project, a few examples are shown below.
 
 <figure>
 
-![](./editor-new-project.png)
+![](/2024/fall/computer-science/images/hello-world/editor-new-project.png)
 
 <figcaption>From editor</figcaption>
 
@@ -53,7 +48,7 @@ There are several ways to create a new project, a few examples are shown below.
 
 When you find a button that allows you to create a new project, make sure the project settings match what is listed below.
 
-![](./new-project.png)
+![](/2024/fall/computer-science/images/hello-world/new-project.png)
 
 ### 3. Print "Hello, World!"
 
@@ -69,7 +64,7 @@ print("Hello, World!")
 
 Press the save icon, give your project a descriptive name, and press "Save." Make sure to save often when you are working!
 
-![](./save-project.png)
+![](/2024/fall/computer-science/images/hello-world/save-project.png)
 
 > The save icon, often represented by a [floppy disk](https://en.wikipedia.org/wiki/Floppy_disk), has its origins in the early days of personal computing. The floppy disk was a common storage device used to save and transfer files in the 1970s and 1980s.
 > 
@@ -87,7 +82,7 @@ You can do a lot by just printing to the terminal! Here are some ideas to get st
 
 To turn in your project, download the Python file by pressing the "Save (to local file)" button.
 
-![](./download.png)
+![](/2024/fall/computer-science/images/hello-world/download.png)
 
 Upload the `.py` file to the assignment submission form:
 

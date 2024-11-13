@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Guess the Number"
+name: Guess the Number
+startDate: 2024-09-19
+endDate: 2024-09-25
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Guess the Number
-
-<mark>Due 09/25 at 11:59</mark>
 
 <!-- One way to settle a dispute is to "pick a number between 1 and 10" and see who is closest. After completing this project, you can use your computer as an [arbitrator](https://www.merriam-webster.com/dictionary/arbitrator) in your next disagreement! -->
 

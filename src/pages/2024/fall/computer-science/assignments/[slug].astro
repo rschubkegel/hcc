@@ -1,0 +1,45 @@
+---
+import Simple from '@layouts/Simple.astro';
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import { DateTime } from 'luxon';
+export const getStaticPaths = (async () => {
+  // Get all slides from src/content/assignments/
+  let assignments = await getCollection('assignments');
+  // Limit assignments to specified date range
+  const startDate = DateTime.fromISO('2024-09-04');
+  const endDate = DateTime.fromISO('2025-01-31');
+  assignments = assignments.filter(assignment => {
+    const date = DateTime.fromJSDate(assignment.data.startDate);
+    const afterStart = date.diff(startDate).milliseconds > 0;
+    const beforeEnd = date.diff(endDate).milliseconds < 0;
+    return afterStart && beforeEnd;
+  });
+  // Convert assignment data to static path data
+  return assignments.map(assignment => ({
+      params: {
+        slug: assignment.slug,
+      },
+      props: {
+        data: assignment.data,
+        render: assignment.render,
+      }
+    }));
+}) satisfies GetStaticPaths;
+const { props: { data, render } } = Astro;
+const { Content } = await render();
+const dueDate = data.endDate ? DateTime.fromJSDate(data.endDate, { zone: 'UTC' }) : undefined;
+---
+
+<Simple title={ data.title || `Assignment: ${ data.name }` }>
+  <p>
+    ← <a href="/2024/fall/computer-science">Course Homepage</a>
+  </p>
+  <h1>{ data.name }</h1>
+  {dueDate && (
+    <p>
+      <mark>Due { dueDate.month }/{ dueDate.day } at 11:59</mark>
+    </p>
+  )}
+  <Content />
+</Simple>

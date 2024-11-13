@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: ThinkWave Check-in"
+name: ThinkWave Check-in
+startDate: 2024-09-05
+dueDate: 2024-09-11
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# ThinkWave Check-in
-
-<mark>Due 09/11 at 11:59</mark>
 
 ### Step One: Log in to ThinkWave
 

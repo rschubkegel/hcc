@@ -1,10 +1,8 @@
 ---
-layout: "@layouts/Course.astro"
+name: Running Python Locally
+title: Running Python Locally
+startDate: 2024-10-24
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Running Python Locally
 
 [Replit](https://replit.com/) is a _cloud_ service, meaning your code runs on _someone else's machine_. However, if you run out of "Development Time" (bottom left corner of dashboard) and you don't want to pay for the service, it's time to set up your computer to run Python locally.
 

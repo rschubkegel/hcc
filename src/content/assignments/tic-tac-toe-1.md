@@ -1,13 +1,9 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Tic Tac Toe pt. 1"
+name: Tic Tac Toe (part 1)
+title: "Assignment: TTT 1"
+startDate: 2024-10-03
+dueDate: 2024-10-09
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Tic Tac Toe (part 1)
-
-<mark>Due 10/09 at 11:59</mark>
 
 Previously your projects have been simple enough to complete in one week, but now it's time to turn up the heat 🔥
 

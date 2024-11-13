@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Password Generator"
+name: Password Generator
+startDate: 2024-09-25
+dueDate: 2024-10-02
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Password Generator
-
-<mark>Due 10/02 at 11:59</mark>
 
 A good safety practice is to _randomly generate your passwords_; this makes it very difficult for a hacker to guess your password. In this assignment, you will implement your own password generator.
 

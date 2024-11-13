@@ -1,13 +1,9 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Tic Tac Toe pt. 2"
+name: Tic Tac Toe (part 2)
+title: "Assignment: TTT 2"
+startDate: 2024-10-10
+dueDate: 2024-10-16
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Tic Tac Toe (part 2)
-
-<mark>Due 10/16 at 11:59</mark>
 
 In [part 1](/2024/fall/computer-science/assignments/tic-tac-toe-1) of this project, you created the functions necessary to print a game board; in this part you will add the game _state_ and _player input_ 🕹️
 

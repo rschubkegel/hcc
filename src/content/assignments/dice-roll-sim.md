@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Dice Rolling Simulator"
+name: Dice Rolling Simulator
+startDate: 2024-10-31
+endDate: 2024-11-06
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Dice Rolling Simulator
-
-<mark>Due 11/06 at 11:59</mark>
 
 A common way to add excitement to games is to add randomness. For board games, this is usually in the form of dice; in this project, you will create a program that emulates rolling dice.
 

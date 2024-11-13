@@ -1,13 +1,9 @@
 ---
-layout: "@layouts/Simple.astro"
+name: Choose Your Own Adventure
 title: "Assignment: CYOA Story Game"
+startDate: 2024-11-14
+endDate: 2024-11-27
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Choose Your Own Adventure
-
-<mark>Due 11/27 at 11:59</mark>
 
 [Choose Your Own Adventure (CYOA)](https://www.cyoa.com/) novels allow readers to make choices that impact the story. In this project, you will make your own CYOA game.
 

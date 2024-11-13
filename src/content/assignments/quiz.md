@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Make a Quiz"
+name: Make a Quiz
+startDate: 2024-09-12
+endDate: 2024-09-18
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Make a Quiz
-
-<mark>Due 09/18 at 11:59</mark>
 
 Make a quiz about something you're passionate about! Sports, music, games... the sky is the limit. Your quiz should follow these specifications:
 
@@ -37,7 +32,7 @@ Here are some resources to learn about these new concepts:
 <p class="notice">
   Remember: to make your JDoodle terminal interactive, toggle the "Interactive" checkbox in the "Input/Output" tab.
 
-  ![](./interactive-checkbox.png)
+  ![](/2024/fall/computer-science/images/quiz/interactive-checkbox.png)
 
 </p>
 

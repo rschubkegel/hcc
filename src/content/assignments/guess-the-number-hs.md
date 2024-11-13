@@ -1,13 +1,8 @@
 ---
-layout: "@layouts/Simple.astro"
-title: "Assignment: Guess the Number - High Scores"
+name: Guess the Number - High Scores
+startDate: 2024-11-07
+endDate: 2024-11-13
 ---
-
-← [Course Homepage](/2024/fall/computer-science)
-
-# Guess the Number - High Scores
-
-<mark>Due 11/13 at 11:59</mark>
 
 To practice loading and saving files, you will extend the _Guess the Number_ project to incorporate persistent high scores. I highly recommend that you make a copy of the project and edit the copy instead of editing the original project directly.
 
