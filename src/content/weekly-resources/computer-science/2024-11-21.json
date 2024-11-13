@@ -2,10 +2,22 @@
   "topics": ["CS: Error Handling", "Python - try/except"],
   "resources": [
     {
+      "title": "Python - Error Handling",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/python-error-handling",
+      "time": 80
+    },
+    {
       "title": "Python Try Except",
       "type": "article",
       "href": "https://www.w3schools.com/python/python_try_except.asp",
       "time": 15
+    },
+    {
+      "title": "Built-in Exceptions",
+      "type": "article",
+      "href": "https://www.w3schools.com/python/python_ref_exceptions.asp",
+      "time": 5
     },
     {
       "title": "The horrors of software bugs",
