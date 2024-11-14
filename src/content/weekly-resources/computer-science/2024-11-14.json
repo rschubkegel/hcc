@@ -2,6 +2,12 @@
   "topics": ["CS: Databases", "Python - Dictionaries"],
   "resources": [
     {
+      "title": "Week 11 Lecture",
+      "type": "video",
+      "href": "https://drive.google.com/file/d/1gsfGvEO8qBw2nBsRtPEwZxAEhVspAUwn/view?usp=sharing",
+      "time": 0
+    },
+    {
       "title": "Databases",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/databases",
@@ -42,6 +48,12 @@
       "type": "article",
       "href": "https://www.w3schools.com/python/python_dictionaries_access.asp",
       "time": 10
+    },
+    {
+      "title": "Quiz: Week 10 Corrections",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSdYKNXkEpDg76BRpEV6EBeVsqdwMOKLYGsOG1_uOHkvO4XJcg/viewform?usp=sf_link",
+      "time": 15
     },
     {
       "title": "Quiz: Week 11",
