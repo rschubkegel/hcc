@@ -24,6 +24,14 @@ Your program must meet the following specifications:
 
 This is a great chance to flex your creative muscles 💪🏻 Have fun with it!!
 
+<details>
+
+<summary>Extra Challenges (optional)</summary>
+
+- Load story data from a file using [json module](https://www.w3schools.com/python/python_json.asp)
+
+</details>
+
 ## Example Story
 
 Here is a simple example of a 2-page story dictionary (remember, yours must be at least 10 pages):
