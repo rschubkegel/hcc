@@ -6,6 +6,12 @@
       "type": "video",
       "href": "https://youtu.be/XpX2WuqzI0Y?si=VDerYW6ChRu9WBG6",
       "time": 7
+    },
+    {
+      "title": "Flappy Bird pt 1",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/flappy-bird-1",
+      "time": 120
     }
   ]
 }
