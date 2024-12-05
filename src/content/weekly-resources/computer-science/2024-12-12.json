@@ -1,4 +1,17 @@
 {
-  "topics": ["User Interfaces: Canvas"],
-  "resources": []
+  "topics": ["CS: User Interfaces"],
+  "resources": [
+    {
+      "title": "The Windows GUI",
+      "type": "video",
+      "href": "https://youtu.be/XpX2WuqzI0Y?si=VDerYW6ChRu9WBG6",
+      "time": 7
+    },
+    {
+      "title": "Graphical User Interfaces",
+      "type": "video",
+      "href": "https://youtu.be/XIGSJshYb90?si=Z8oJPIEsSZUCytKG",
+      "time": 13
+    }
+  ]
 }

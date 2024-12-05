@@ -1,11 +1,35 @@
 {
-  "topics": ["User Interfaces: Widgets"],
+  "topics": ["CS: Intro to Graphics"],
   "resources": [
     {
-      "title": "The Windows GUI",
+      "title": "CS: Computer Graphics",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/graphics",
+      "time": 30
+    },
+    {
+      "title": "Screens & 2D Graphics",
       "type": "video",
-      "href": "https://youtu.be/XpX2WuqzI0Y?si=VDerYW6ChRu9WBG6",
-      "time": 7
+      "href": "https://youtu.be/7Jr0SFMQ4Rs?si=UHu0ZeLMEhHUUfue",
+      "time": 12
+    },
+    {
+      "title": "Python: Intro to Pygame",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/pygame",
+      "time": 50
+    },
+    {
+      "title": "Python Constants",
+      "type": "video",
+      "href": "https://youtu.be/NunPMnbszGE?si=_3uVlWNbui5fOiDD",
+      "time": 9
+    },
+    {
+      "title": "Using Functions in Python",
+      "type": "video",
+      "href": "https://youtu.be/WRI4fXDIXWM?si=rGOgX4jvQzVodK5s",
+      "time": 13
     },
     {
       "title": "Flappy Bird pt 1",

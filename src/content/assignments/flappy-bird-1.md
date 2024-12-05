@@ -12,7 +12,7 @@ The project will be split into three weeks but **you must submit the program eac
 - Define a function to draw a bird
   - Use [basic shapes](#drawing-shapes) to compose a simple bird
   - Combine at least 3 basic shapes
-  - Make sure to use more than one type of shape (i.e. don't _only_ use circles)
+  - Make sure to use more than one type of shape (i.e. don't _only_ use rectangles)
 - Call the function in your main game loop
 
 ## Pygame

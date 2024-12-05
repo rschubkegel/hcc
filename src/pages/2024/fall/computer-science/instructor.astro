@@ -4,10 +4,18 @@ import { getCollection } from 'astro:content';
 import { formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 import Gatekeeper from '@components/ShowForInstructor.tsx';
 const weeklyResources = (await getCollection('weekly-resources', ({ id }) => /computer-science/.test(id)));
-const resourcesWithCumulativeMinutes = weeklyResources.map(resource => ({
-  ...resource,
-  minutes: resource.data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0),
-}));
+let breakWeeks = 0;
+const resourcesWithCumulativeMinutes = weeklyResources.map((resource, i) => {
+  const minutes = resource.data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0)
+  if (minutes === 0) {
+    breakWeeks++;
+  }
+  return {
+    ...resource,
+    minutes,
+    week: i + 1 - breakWeeks
+  };
+});
 const totalMinutes = resourcesWithCumulativeMinutes.reduce((a, b) => a + b.minutes, 0);
 const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resources'][0]) => {
   // all slides opened in new tab
@@ -37,11 +45,11 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
           </thead>
           <tbody>
             {
-              resourcesWithCumulativeMinutes.map(({ id, data, minutes }, index) => (
+              resourcesWithCumulativeMinutes.map(({ id, data, minutes, week }, index) => (
                 <tr>
                   <td>
                     <div>
-                      <strong>Week {index + 1}</strong>
+                      <strong>Week {week}</strong>
                     </div>
                     <div>
                       <em>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</em>
