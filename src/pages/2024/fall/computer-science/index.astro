@@ -9,6 +9,17 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
   // external links opened in new tab
   return resource.href && isHrefExternal(resource.href) ? '_blank' : undefined;
 };
+let breakWeeks = 0;
+const resourcesWithWeekNumber = weeklyResources.map((resource, i) => {
+  const minutes = resource.data.resources.flatMap(resource => resource.time).reduce((a, b) => a + b, 0)
+  if (minutes === 0) {
+    breakWeeks++;
+  }
+  return {
+    ...resource,
+    week: i + 1 - breakWeeks
+  };
+});
 ---
 
 <Course course="Computer Science" semester="Fall">
@@ -84,11 +95,11 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
     </thead>
     <tbody>
       {
-        weeklyResources.map(({ id, data }, index) => (
+        resourcesWithWeekNumber.map(({ id, data, week }, index) => (
           <tr style={`display: ${assignedBeforeNow(id.slice(-10)) ? 'table-row' : 'none'};`}>
             <td>
               <div>
-                <strong>Week {index + 1}</strong>
+                <strong>Week {week}</strong>
               </div>
               <div>
                 <em>{formatWeekString(id.slice(-10), { duration: index === 0 ? (1000 * 60 * 60 * 24 * 7) : undefined })}</em>
