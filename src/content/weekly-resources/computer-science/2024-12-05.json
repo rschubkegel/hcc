@@ -32,6 +32,12 @@
       "time": 13
     },
     {
+      "title": "Quiz: Week 13",
+      "type": "assignment",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLScdGCfPgDJuKjGSDSd3_KhNicOof5dT-ccMNQJ4THSW_oYunQ/viewform?usp=sf_link",
+      "time": 30
+    },
+    {
       "title": "Flappy Bird pt 1",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/flappy-bird-1",
