@@ -2,6 +2,12 @@
   "topics": ["CS: User Interfaces"],
   "resources": [
     {
+      "title": "CS: UI and UX",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/ui-ux",
+      "time": 30
+    },
+    {
       "title": "The Windows GUI",
       "type": "video",
       "href": "https://youtu.be/XpX2WuqzI0Y?si=VDerYW6ChRu9WBG6",
@@ -14,10 +20,28 @@
       "time": 13
     },
     {
+      "title": "What is User Interface",
+      "type": "video",
+      "href": "https://youtu.be/Z-BO6IYTgJg?si=Rdc047D2lfSJoHYh",
+      "time": 3
+    },
+    {
+      "title": "UX Design vs UI Design",
+      "type": "video",
+      "href": "https://youtu.be/5CxXhyhT6Fc?si=ryUIsS-pLjRGYsXg",
+      "time": 10
+    },
+    {
+      "title": "Python - Pygame State",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/pygame-game-state",
+      "time": 80
+    },
+    {
       "title": "Flappy Bird pt 2",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/flappy-bird-2",
-      "time": 120
+      "time": 90
     }
   ]
 }
