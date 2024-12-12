@@ -2,6 +2,12 @@
   "topics": ["CS: User Interfaces"],
   "resources": [
     {
+      "title": "Week 14 Lecture",
+      "type": "video",
+      "href": "https://drive.google.com/file/d/1P6doC7s8q-qdhAeAu9f96Izy1q-WafqN/view?usp=drive_link",
+      "time": 0
+    },
+    {
       "title": "CS: UI and UX",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/ui-ux",
