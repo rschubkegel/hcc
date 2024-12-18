@@ -1,4 +1,17 @@
 {
-  "topics": ["Final Project"],
-  "resources": []
+  "topics": ["Flappy Bird pt 4"],
+  "resources": [
+    {
+      "title": "Python - Pygame Collisions",
+      "type": "slides",
+      "href": "/2024/fall/computer-science/slides/pygame-collisions",
+      "time": 50
+    },
+    {
+      "title": "Flappy Bird pt 4",
+      "type": "assignment",
+      "href": "/2024/fall/computer-science/assignments/flappy-bird-4",
+      "time": 180
+    }
+  ]
 }

@@ -1,17 +1,17 @@
 {
-  "topics": ["Final Project"],
+  "topics": ["Python - Pygame Collisions"],
   "resources": [
     {
-      "title": "Python - Pygame Collisions",
+      "title": "Python - Centering Drawings",
       "type": "slides",
-      "href": "/2024/fall/computer-science/slides/pygame-collisions",
+      "href": "/2024/fall/computer-science/slides/pygame-centering",
       "time": 50
     },
     {
       "title": "Flappy Bird pt 3",
       "type": "assignment",
       "href": "/2024/fall/computer-science/assignments/flappy-bird-3",
-      "time": 240
+      "time": 90
     }
   ]
 }
