@@ -1,8 +1,8 @@
 ---
 name: "Flappy Bird 4"
 title: "Flappy Bird: Part 4"
-startDate: 2024-12-19
-endDate: 2025-01-09
+startDate: 2024-01-09
+endDate: 2025-01-15
 ---
 
 In [part 3](/2024/fall/computer-science/assignments/flappy-bird-3), you added scrolling pipes. In this final part, you will allow the bird to collide with the pipes!
