@@ -2,7 +2,7 @@
 name: "Flappy Bird 2"
 title: "Flappy Bird: Part 2"
 startDate: 2024-12-12
-endDate: 2024-12-18
+endDate: 2024-12-21
 ---
 
 In [part 1](/2024/fall/computer-science/assignments/flappy-bird-1), you setup Pygame and defined a function to draw a bird. In this assignment you will add the logic to move the bird!
