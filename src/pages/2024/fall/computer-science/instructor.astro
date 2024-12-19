@@ -3,6 +3,7 @@ import Course from '@layouts/Course.astro';
 import { getCollection } from 'astro:content';
 import { formatWeekString, isHrefExternal, SYMBOLS } from 'src/global';
 import Gatekeeper from '@components/ShowForInstructor.tsx';
+const examples = await Astro.glob('/public/2024/fall/computer-science/examples/*.py');
 const weeklyResources = (await getCollection('weekly-resources', ({ id }) => /computer-science/.test(id)));
 let breakWeeks = 0;
 const resourcesWithCumulativeMinutes = weeklyResources.map((resource, i) => {
@@ -34,6 +35,14 @@ const getResourceTarget = (resource: typeof weeklyResources[0]['data']['resource
   <main>
     <Gatekeeper client:load>
       <div>
+        <h3>Examples</h3>
+        <ul>
+          {examples.map(({ default: url }) => (
+            <li>
+              <a href={url}>{url.slice(url.lastIndexOf('/') + 1)}</a>
+            </li>
+          ))}
+        </ul>
         <h2>All Weekly Resources</h2>
         <table>
           <thead>

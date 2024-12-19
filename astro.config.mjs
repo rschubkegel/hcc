@@ -9,5 +9,8 @@ export default defineConfig({
   },
   // https://docs.astro.build/en/guides/deploy/github/#using-github-pages-with-a-custom-domain
   site: 'https://hcc.rschubkegel.xyz',
-  integrations: [preact()]
+  integrations: [preact()],
+  vite: {
+    assetsInclude: '**/*.py',
+  }
 });
