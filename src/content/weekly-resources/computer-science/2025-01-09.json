@@ -5,7 +5,13 @@
       "title": "Python - Pygame Collisions",
       "type": "slides",
       "href": "/2024/fall/computer-science/slides/pygame-collisions",
-      "time": 50
+      "time": 110
+    },
+    {
+      "title": "Week 16 Lecture",
+      "type": "video",
+      "href": "https://drive.google.com/file/d/1AJZ8MDGyTs63oR7iXcCQK4gIwBSx6TeM/view?usp=drive_link",
+      "time": 0
     },
     {
       "title": "Flappy Bird pt 4",
