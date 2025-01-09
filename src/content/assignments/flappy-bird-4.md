@@ -94,5 +94,5 @@ See the [`pygame.font` documentation](https://www.pygame.org/docs/ref/font.html)
 When your program meets the requirements, submit your `.py` file here:
 
 <p style="text-align:center">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5PBm4ue9U8E0pTnEdFmKtfiVipYoOqRH3DSw0XBKZeqdoYw/viewform?usp=header" target="_blank" class="button">Submit Assignment</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2Ue9t5mUMkwqjUYpf4uveWDfSMlKyRuZub9DjYWXSejyppg/viewform?usp=dialog" target="_blank" class="button">Submit Assignment</a>
 </p>
